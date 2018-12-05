@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fitnessPlus", "fitnessPlus\fitnessPlus.csproj", "{CF4AA8F4-39DB-443D-B478-94BB042FF859}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fitnessPlus.Tests", "fitnessPlus.Tests\fitnessPlus.Tests.csproj", "{120F6044-C874-4FF0-B3E7-20EE2CF27BD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF4AA8F4-39DB-443D-B478-94BB042FF859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF4AA8F4-39DB-443D-B478-94BB042FF859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF4AA8F4-39DB-443D-B478-94BB042FF859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF4AA8F4-39DB-443D-B478-94BB042FF859}.Release|Any CPU.Build.0 = Release|Any CPU
+		{120F6044-C874-4FF0-B3E7-20EE2CF27BD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{120F6044-C874-4FF0-B3E7-20EE2CF27BD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{120F6044-C874-4FF0-B3E7-20EE2CF27BD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{120F6044-C874-4FF0-B3E7-20EE2CF27BD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB5D114E-EA59-4D41-A4B7-3D88B754F11E}
+	EndGlobalSection
+EndGlobal
