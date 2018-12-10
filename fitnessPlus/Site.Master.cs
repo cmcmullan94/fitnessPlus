@@ -30,6 +30,10 @@ namespace fitnessPlus
             {
                 lblfirebaseConnection.Text = "Firebase Connection Established";
             }
+            else
+            {
+                lblfirebaseConnection.Text = "Connection Error!";
+            }
 
         }
     }
