@@ -5,6 +5,10 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
+
 namespace fitnessPlus
 {
     public partial class MacroCalculator : System.Web.UI.Page
@@ -14,9 +18,9 @@ namespace fitnessPlus
 
         }
 
-        protected void btnDoCalc_Click(object sender, EventArgs e)
+        protected async void btnDoCalc_Click(object sender, EventArgs e)        //asynchronus method
         {
-            
+
             var bw = int.Parse(txtWeightInput.Text);                                                //taking user input, declaring as bodyweight
             int numA = 14;                                                                          //set value for first instance of maintenance calc
             int numB = 16;                                                                          //set value for second instance of maintenance calc
@@ -56,6 +60,8 @@ namespace fitnessPlus
             lblFatReturn.Text = fatGrams.ToString();
             lblCarbReturn.Text = carbsGrams.ToString();
 
+
+         
 
 
         }

@@ -79,6 +79,8 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
+
+                <asp:Label ID="lblfirebaseConnection" runat="server" Text=" "></asp:Label>
                 <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
             </footer>
         </div>
