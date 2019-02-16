@@ -58,7 +58,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <!--footer for all web pages -->
-            <footer class="row", "container-fluid" position="relative">
+            <footer class="row", "container-fluid" >
                 <div class="col-md-3">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2306.271086403075!2d-5.884924683984847!3d54.687257081127356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4861a77c7aae3041%3A0xbea2d9c54f43e8f4!2sUlster+University!5e0!3m2!1sen!2suk!4v1550332980379" width="300" height="175" frameborder="0" style="border: 0" allowfullscreen></iframe>
                 </div>
