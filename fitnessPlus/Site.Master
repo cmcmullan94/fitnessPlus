@@ -18,8 +18,6 @@
 </head>
 <body>
     <form runat="server">
-<script>
-</script>
         <asp:ScriptManager runat="server">
             <Scripts>
                 <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
@@ -40,7 +38,7 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #afabab">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -59,8 +57,24 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+            <!--footer for all web pages -->
+            <footer class="row", "container-fluid" position="relative">
+                <div class="col-md-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2306.271086403075!2d-5.884924683984847!3d54.687257081127356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4861a77c7aae3041%3A0xbea2d9c54f43e8f4!2sUlster+University!5e0!3m2!1sen!2suk!4v1550332980379" width="300" height="175" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-center">Contact:</p>
+                    <p class="text-center">07842821505</p>
+                    <p class="text-center">fitnesshelp@fitness.com</p>
+                </div>
+                <div class="col-md-3", "text-center">
+                    <p class="text-center">Copyright:</p>
+                    <p class="text-center">Ulster University - <%: DateTime.Now.Year %></p>
+                    <p class="text-center">Version 1.0</p>
+                </div>
+                <div class="col-md-3">
+                    <img class="col-md-4", "rounded float-right" src="Images/singleLogo.png" />
+                </div>
             </footer>
         </div>
 
