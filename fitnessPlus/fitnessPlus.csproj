@@ -141,6 +141,8 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Images\fullLogo.jpg" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="Images\logo.png" />
     <Content Include="Images\singleLogo.png" />
     <Content Include="MacroCalculator.aspx" />
     <Content Include="Scripts\bootstrap.js" />
