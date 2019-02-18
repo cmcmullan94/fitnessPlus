@@ -12,13 +12,16 @@
 <body>
     <form id="form1" runat="server">
         <!-- Header content, separate from site.master -->
-        <div class="navbar navbar-inverse navbar-fixed-top", "container text-center" style="background-color: #afabab">
+        <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #afabab">
 
-            <div class="container", "col-lg-3 col-lg-offset-3">
+            <div class="container text-center", "col-lg-4 col-lg-offset-4">
 
-                <div> Twitter </div>
-                <div> Facebook </div>
-                <div> Instagram </div>
+                <div class="align-content-center", "col-md-4">
+                    <img src="Images/facebook.png" />
+                </div>
+                <div class="align-content-center", "col-md-4">
+                    <img src="Images/instagram.png" />
+                </div>
 
                 <div class="navbar-header" >
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
