@@ -29,28 +29,24 @@
         <!-- Main body content here 
             "info-line = allows for vertical stacking "-->
 
-        <div class="container-fluid">
-            <div class="info-header", "row">
-                <div class="col">
-                    
-                </div>
-                <div class="info-line", "col">
+       <div class="container d-flex h-100", "border-style">
+            
+            <div class="info-header", "row justify-content-center align-self-center">
+                <div class="info-line">
                     <img src="Images/welcomePageLogo.png" class="rounded", "img-fluid" alt="..."/>
                 </div>
-                <div class="col">
-
-                </div>
-                <div class="info-line">
+                <div class="info-line", "align-content-center">
                     <asp:Button ID="btnLogIn" runat="server" Text="Log In" class="btn btn-info" href=""/>
                 </div>
                 &nbsp;
                 &nbsp;
                 &nbsp;
-                <div class="info-line">
+                <div class="info-line", "align-content-center">
                     <asp:Button ID="btnPreview" runat="server" Text="Preview!" class="btn btn-info" href=""/>
-                </div> 
+                </div>
+                
             </div>
-        </div>
+       </div>
 
     </form>
 </body>
