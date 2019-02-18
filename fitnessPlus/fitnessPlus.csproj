@@ -139,6 +139,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Images\favicon.png" />
     <Content Include="Images\footerLogo.png" />
     <Content Include="Images\welcomePageLogo.png" />
     <Content Include="welcomePage.aspx" />
