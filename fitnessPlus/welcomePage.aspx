@@ -14,15 +14,22 @@
         <!-- Header content, separate from site.master -->
         <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #afabab">
 
-            <div class="container text-center", "col-lg-4 col-lg-offset-4">
+            <div class="container-fluid  text-center">
+                <div class="navbar-header", "d-flex">
 
-                <div class="align-content-center", "col-md-4">
-                    <img src="Images/facebook.png" />
-                </div>
-                <div class="align-content-center", "col-md-4">
-                    <img src="Images/instagram.png" />
-                </div>
+                    <ul class="nav navbar-nav" "list-inline mx-auto justify-content-center">
+                        <li class="list-inline-item"><a href='#'><img src="Images/facebook.png" /></a></li>
+                        <li class="list-inline-item"><a href='#'><img src="Images/instagram.png" /></a></li>
+                    </ul>
 
+                   <!-- <div class="navbar-brand">
+                        <img src="Images/facebook.png" />
+                    </div>
+                    <div class="navbar-brand">
+                        <img src="Images/instagram.png" />
+                    </div> -->
+
+                </div>
                 <div class="navbar-header" >
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
