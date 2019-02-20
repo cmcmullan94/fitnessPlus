@@ -79,7 +79,6 @@
                 <div class="info-line", "align-content-center">
                     <asp:Button ID="btnPreview" runat="server" Text="Preview!" class="btn btn-info" style="background-color: #66ccff" Width="100px" font="Calibri" Font-Size="Large" href=""/>
                 </div>
-                
             </div>
        </div>
 

@@ -16,13 +16,16 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
     <style type="text/css">
-        .navbar-nav{
-            float: none;
-            text-align: center;
-        }
-        .navbar-nav li{
-            display: inline-block;
-            float: none;
+        @media screen and (min-width: 768px) {
+            .navbar-nav {
+                float: none;
+                text-align: center;
+            }
+
+                .navbar-nav li {
+                    display: inline-block;
+                    float: none;
+                }
         }
     </style>
 
@@ -60,7 +63,7 @@
                     </button>
                 </div>
 
-                <ul class="nav navbar-nav" style="font-family: Calibri">
+                <ul class="nav navbar-nav collapse navbar-collapse" style="font-family: Calibri">
                     <li class="nav-item">
                         <a class="nav-link" href='#' style="color: #000000">myMacros </a>
                     </li>
@@ -83,10 +86,10 @@
 
 
 
-                <div class="navbar-collapse collapse">
+                <!-- <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                    </ul>
-                </div>
+                    </ul> 
+                </div> -->
             </div>
         </div>
 
