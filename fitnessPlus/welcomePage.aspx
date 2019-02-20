@@ -8,28 +8,27 @@
     <link rel="icon" href="Images/favicon.png" />
     <title></title>
     <link href="Content/bootstrap.css" rel="stylesheet" />
+
+    <style type="text/css">
+        .navbar-nav{
+            float: none;
+            text-align: center;
+        }
+        .navbar-nav li{
+            display: inline-block;
+            float: none;
+        }
+    </style>
+
 </head>
 <body>
     <form id="form1" runat="server">
+
+
         <!-- Header content, separate from site.master -->
         <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #afabab">
+            <div class="container-fluid">
 
-            <div class="container-fluid  text-center">
-                <div class="navbar-header", "d-flex">
-
-                    <ul class="nav navbar-nav" "list-inline mx-auto justify-content-center">
-                        <li class="list-inline-item"><a href='#'><img src="Images/facebook.png" /></a></li>
-                        <li class="list-inline-item"><a href='#'><img src="Images/instagram.png" /></a></li>
-                    </ul>
-
-                   <!-- <div class="navbar-brand">
-                        <img src="Images/facebook.png" />
-                    </div>
-                    <div class="navbar-brand">
-                        <img src="Images/instagram.png" />
-                    </div> -->
-
-                </div>
                 <div class="navbar-header" >
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
@@ -37,6 +36,15 @@
                         <span class="icon-bar"></span>
                     </button>
                 </div>
+
+                    <ul class="nav navbar-nav" >
+                        <li class="nav-item"> 
+                            <a class="nav-link" href='https://www.facebook.com/'> <img src="Images/facebook.png" /> </a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" href='https://www.instagram.com/'> <img src="Images/instagram.png" /> </a>
+                        </li>
+                    </ul> 
 
                 <div class="navbar-collapse collapse" >
                     <ul class="nav navbar-nav">
