@@ -144,6 +144,7 @@
     <Content Include="Images\footerLogo.png" />
     <Content Include="Images\instagram.png" />
     <Content Include="Images\welcomePageLogo.png" />
+    <Content Include="logIn.aspx" />
     <Content Include="welcomePage.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Images\logo.png" />
@@ -208,6 +209,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="logIn.aspx.cs">
+      <DependentUpon>logIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logIn.aspx.designer.cs">
+      <DependentUpon>logIn.aspx</DependentUpon>
     </Compile>
     <Compile Include="MacroCalculator.aspx.cs">
       <DependentUpon>MacroCalculator.aspx</DependentUpon>
