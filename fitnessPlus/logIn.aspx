@@ -7,6 +7,17 @@
     <link rel="icon" href="Images/favicon.png" />
     <title></title>
     <link href="Content/bootstrap.css" rel="stylesheet" />
+
+    <style type="text/css">
+        .navbar-nav{
+            float: none;
+            text-align: right;
+        }
+        .navbar-nav li{
+            display: inline-block;
+            float: none;
+        }
+    </style>
    
 </head>
 <body>
@@ -48,11 +59,12 @@
                
             <div class="info-header", "col-lg-4 col-lg-offset-4" style="padding-top: 100px">
 
-                <div class="form-group">
+                <div class="info-line", "form-group">
                     <label for="inputEmail" style="color: #66ccff">Email </label>
                     <input type="email" class="form-control" id="frmEmail" aria-describedby="emailHelp" placeholder="Enter email" style="width: 200px" />
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
+                &nbsp;
                 <div class="form-group">
                     <label for="inputPassword" style="color: #66ccff">Password </label>
                     <input type="email" class="form-control" id="frmPass" aria-describedby="passwordHelp" placeholder="Password" style="width: 200px" />
