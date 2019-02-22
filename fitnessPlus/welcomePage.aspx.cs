@@ -13,5 +13,10 @@ namespace fitnessPlus
         {
 
         }
+
+        protected void btnLogIn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("login.aspx");
+        }
     }
 }

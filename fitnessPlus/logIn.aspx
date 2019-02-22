@@ -68,7 +68,7 @@
                 <div class="form-group">
                     <label for="inputPassword" style="color: #66ccff">Password </label>
                     <input type="email" class="form-control" id="frmPass" aria-describedby="passwordHelp" placeholder="Password" style="width: 200px" />
-                    <!-- ERROR HANDLING FOR PASSWORD LOGIN HERE-->
+                    <!-- ERROR HANDLING FOR PASSWORD -->
                 </div>
                 &nbsp;
                 &nbsp;

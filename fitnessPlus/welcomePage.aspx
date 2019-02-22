@@ -71,7 +71,7 @@
                 &nbsp;
                 &nbsp;
                 <div class="info-line", "align-content-center">
-                    <asp:Button ID="btnLogIn" runat="server" Text="Log In" class="btn btn-info" style="background-color: #66ccff" Width="100px" font="Calibri" Font-Size="Large" href=""/>
+                    <asp:Button ID="btnLogIn" runat="server" Text="Log In" class="btn btn-info" style="background-color: #66ccff" Width="100px" font="Calibri" Font-Size="Large" OnClick="btnLogIn_Click" />
                 </div>
                 &nbsp;
                 &nbsp;
