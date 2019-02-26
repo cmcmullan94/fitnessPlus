@@ -19,6 +19,7 @@ namespace fitnessPlus
         {
 
             var bw = int.Parse(txtWeightInput.Text);                                                //taking user input, declaring as bodyweight
+
             int numA = 14;                                                                          //set value for first instance of maintenance calc
             int numB = 16;                                                                          //set value for second instance of maintenance calc
             double fatA = 0.3;                                                                      //set value for first instance of fat calc

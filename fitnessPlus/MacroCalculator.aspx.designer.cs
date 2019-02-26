@@ -13,15 +13,6 @@ namespace fitnessPlus {
     public partial class MacroCalculator {
         
         /// <summary>
-        /// txtWeightInput control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtWeightInput;
-        
-        /// <summary>
         /// btnDoCalc control.
         /// </summary>
         /// <remarks>
