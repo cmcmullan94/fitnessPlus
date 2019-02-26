@@ -15,7 +15,7 @@ namespace fitnessPlus
 
         }
 
-        protected void btnDoCalc_Click(object sender, EventArgs e)                                  //async void = asynchronus method, needed for firebase 
+        protected void btnDoCalc_Click(object sender, EventArgs e)                                  
         {
 
             var bw = int.Parse(txtWeightInput.Text);                                                //taking user input, declaring as bodyweight

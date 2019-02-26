@@ -34,14 +34,18 @@
                     </button>
                 </div>
 
-                    <ul class="nav navbar-nav" >
-                        <li class="nav-item"> 
-                            <a class="nav-link" href='https://www.facebook.com/'> <img src="Images/facebook.png" /> </a>
-                        </li>
-                        <li class="nav-item"> 
-                            <a class="nav-link" href='https://www.instagram.com/'> <img src="Images/instagram.png" /> </a>
-                        </li>
-                    </ul> 
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href='https://www.facebook.com/'>
+                            <img src="Images/facebook.png" />
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href='https://www.instagram.com/'>
+                            <img src="Images/instagram.png" />
+                        </a>
+                    </li>
+                </ul>
 
                 <div class="navbar-collapse collapse" >
                     <ul class="nav navbar-nav">
