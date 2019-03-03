@@ -49,6 +49,10 @@
              <div class="info-line", "align-content-center" style="padding-top: 50px">
                  <asp:Button ID="btnDoCalc" runat="server" Text="GO!" OnClick="btnDoCalc_Click" class="btn btn-info" Style="background-color: #66ccff" Width="100px" font="Calibri" Font-Size="Large" />
              </div>
+
+
+
+
              <div class="info-line", "align-content-center" style="padding-top: 50px">
                  <asp:Label ID="lblmaintenanceCalories" runat="server" Text="Maintenance Calories: " style="color: #afabab"></asp:Label>
                  <asp:Label ID="lblMaintReturn" runat="server" Text=" " style="color: #afabab"></asp:Label>
