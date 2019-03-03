@@ -63,8 +63,14 @@
                     </button>
                 </div>
 
+                <div class="nav navbar-nav collapse navbar-collapse" style="float: left">
+                    <a class="nav-link" href="#">
+                        <img src="Images/logo.png"/>
+                        </a>
+                </div>
+
                 <div class="text-center">
-                    <ul class="nav navbar-nav collapse navbar-collapse" style="font-family: Calibri">
+                    <ul class="nav navbar-nav collapse navbar-collapse" style="font-family: Calibri; font-size: larger">
                         <li class="nav-item">
                             <a class="nav-link" href='#' style="color: #000000">myMacros </a>
                         </li>
@@ -86,21 +92,21 @@
                     </ul>
                 </div>
 
-                <div class="text-right">
+                <!-- <div class="text-right">
 
-                <ul class="nav navbar-nav" style="text-align: right">
-                    <li class="nav-item">
-                        <a class="nav-link" href='https://www.facebook.com/'>
-                            <img src="Images/facebook.png" />
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href='https://www.instagram.com/'>
-                            <img src="Images/instagram.png" />
-                        </a>
-                    </li>
-                </ul>
-                    </div>
+                    <ul class="nav navbar-nav" style="text-align: right">
+                        <li class="nav-item">
+                            <a class="nav-link" href='https://www.facebook.com/'>
+                                <img src="Images/facebook.png" />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href='https://www.instagram.com/'>
+                                <img src="Images/instagram.png" />
+                            </a>
+                        </li>
+                    </ul>
+                </div> -->
 
             </div>
         </div>
