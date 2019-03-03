@@ -4,34 +4,38 @@
 
     <style>
         .col-centered {
-            margin: 0 auto;
-            float: none;
+            margin: auto;
         }
     </style>
 
-     <div class="container text-center">
+     <div class="container text-center" >   
                
          <div class="info-header", "col-lg-4 col-lg-offset-4">
 
-            <div class="info-line", "form-group" style="width: 500px">
-                <label for="bodyweight" style="color: #66ccff">Bodyweight - lbs </label>
-                <input type="number" class="form-control" id="txtWeightInput" aria-describedby="BW" style="width: 200px" /> 
-                <small id="calcHelp" class="form-text text-muted">Macros are calculated using pounds!</small>
+            <div class="info-line", "form-group", "col-centered">  
+                <label for="txtWeightInput" style="color: #66ccff">
+                    Bodyweight - lbs 
+                    <br />
+                    <input type="number" class="form-control" id="txtWeightInput" aria-describedby="BW" style="width: 200px" />
+                    <br />
+                    <small id="calcHelp" class="form-text text-muted">Macros are calculated using pounds!</small>
+                </label>
             </div>
 
 
              <div class="info-line", "input-group-text" style="padding-top: 20px">
                 <label for="Goal" style="color: #66ccff">Goal </label>
                  <br />
-                 <label for="Bulk" style="color: #afabab">Bulk </label>
-                    <input type="radio">&nbsp;&nbsp;&nbsp;&nbsp;
-                 <label for="Cut" style="color: #afabab">Cut </label>
-                    <input type="radio">
+                 <label for="rdBulk" style="color: #afabab">Bulk 
+                    <input type="radio" id="rdBulk">&nbsp;&nbsp;&nbsp;&nbsp;
+                 </label>
+                 <label for="rdCut" style="color: #afabab">Cut </label>
+                    <input type="radio" id="rdCut">
             </div>
 
 
              <div class="info-line", "form-group" style="padding-top: 20px">
-                <label for="specific" style="color: #66ccff">By how much? </label>
+                <label for="numSpecific" style="color: #66ccff">By how much? </label>
                 <input type="number" class="form-control" id="numSpecific" aria-describedby="specific" style="width: 200px" />
                 <small id="help" class="form-text text-muted">This is how much you want to deviate from your maintenance calories!</small>
             </div>
