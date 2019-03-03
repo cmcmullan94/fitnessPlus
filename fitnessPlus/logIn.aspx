@@ -64,15 +64,22 @@
             <div class="info-header", "col-lg-4 col-lg-offset-4" style="padding-top: 100px">
 
                 <div class="info-line", "form-group">
-                    <label for="frmEmail" style="color: #66ccff">Email </label>
+                    <label for="frmEmail" style="color: #66ccff">
+                        Email 
+                        <br />
+                        <br />
                     <input type="email" class="form-control" id="frmEmail" aria-describedby="emailHelp" placeholder="Enter email" style="width: 200px" />
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </label>
                 </div>
                 &nbsp;
                 <div class="form-group">
-                    <label for="frmPass" style="color: #66ccff">Password </label>
+                    <label for="frmPass" style="color: #66ccff">
+                        Password 
+                        <br />
+                        <br />
                     <input type="email" class="form-control" id="frmPass" aria-describedby="passwordHelp" placeholder="Password" style="width: 200px" />
-                    <!-- ERROR HANDLING FOR PASSWORD -->
+                    </label>
                 </div>
                 &nbsp;
                 &nbsp;

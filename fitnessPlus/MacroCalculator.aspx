@@ -16,6 +16,7 @@
                 <label for="txtWeightInput" style="color: #66ccff">
                     Bodyweight - lbs 
                     <br />
+                    <br />
                     <input type="number" class="form-control" id="txtWeightInput" aria-describedby="BW" style="width: 200px" />
                     <br />
                     <small id="calcHelp" class="form-text text-muted">Macros are calculated using pounds!</small>
@@ -26,19 +27,25 @@
              <div class="info-line", "input-group-text" style="padding-top: 20px">
                 <label for="Goal" style="color: #66ccff">Goal </label>
                  <br />
-                 <label for="rdBulk" style="color: #afabab">Bulk 
+                 <label for="rdBulk" style="color: #afabab">Bulk </label>
                     <input type="radio" id="rdBulk">&nbsp;&nbsp;&nbsp;&nbsp;
-                 </label>
                  <label for="rdCut" style="color: #afabab">Cut </label>
                     <input type="radio" id="rdCut">
             </div>
 
 
-             <div class="info-line", "form-group" style="padding-top: 20px">
-                <label for="numSpecific" style="color: #66ccff">By how much? </label>
-                <input type="number" class="form-control" id="numSpecific" aria-describedby="specific" style="width: 200px" />
-                <small id="help" class="form-text text-muted">This is how much you want to deviate from your maintenance calories!</small>
+             <div class="info-line", "form-group", "col-centered" style="padding-top: 20px">
+                 <label for="numSpecific" style="color: #66ccff">
+                     By how much?
+                     <br />
+                     <br />
+                     <input type="number" class="form-control" id="numSpecific" aria-describedby="specific" style="width: 200px" />
+                     <br />
+                     <small id="help" class="form-text text-muted">This is how much you want to deviate from your maintenance calories!</small>
+                 </label>
             </div>
+
+
              <div class="info-line", "align-content-center" style="padding-top: 50px">
                  <asp:Button ID="btnDoCalc" runat="server" Text="GO!" OnClick="btnDoCalc_Click" class="btn btn-info" Style="background-color: #66ccff" Width="100px" font="Calibri" Font-Size="Large" />
              </div>
