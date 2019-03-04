@@ -50,26 +50,45 @@
                  <asp:Button ID="btnDoCalc" runat="server" Text="GO!" OnClick="btnDoCalc_Click" class="btn btn-info" Style="background-color: #66ccff" Width="100px" font="Calibri" Font-Size="Large" />
              </div>
 
-
-
-
              <div class="info-line", "align-content-center" style="padding-top: 50px">
                  <asp:Label ID="lblmaintenanceCalories" runat="server" Text="Maintenance Calories: " style="color: #afabab"></asp:Label>
                  <asp:Label ID="lblMaintReturn" runat="server" Text=" " style="color: #afabab"></asp:Label>
              </div>
-             <div class="info-line", "align-content-center" >
-                 <asp:Label ID="lblProtein" runat="server" Text="Protein: "></asp:Label>
-                 <asp:Label ID="lblProteinReturn" runat="server" Text=" "></asp:Label>
-             </div>
-             <div class="info-line", "align-content-center" >
-                 <asp:Label ID="lblCarbs" runat="server" Text="Carbs: "></asp:Label>
-                 <asp:Label ID="lblCarbReturn" runat="server" Text=" "></asp:Label>
-             </div>
-             <div class="info-line", "align-content-center" >
-                 <asp:Label ID="lblFat" runat="server" Text="Fat: "></asp:Label>
-                 <asp:Label ID="lblFatReturn" runat="server" Text=" "></asp:Label>
+         </div>
+
+     </div>
+
+           
+    <div class="container">
+        <div class="row">
+
+
+            <div class="col-4">
+                <asp:Label ID="lblProtein" runat="server" Text="Protein: "></asp:Label>
+                <br />
+                <asp:Label ID="lblProteinReturn" runat="server" Text=" "></asp:Label>
+            </div>
+            <div class="col-4">
+                <asp:Label ID="lblCarbs" runat="server" Text="Carbs: "></asp:Label>
+                <br />
+                <asp:Label ID="lblCarbReturn" runat="server" Text=" "></asp:Label>
+            </div>
+            <div class="col-4">
+                <asp:Label ID="lblFat" runat="server" Text="Fat: "></asp:Label>
+                <br />
+                <asp:Label ID="lblFatReturn" runat="server" Text=" "></asp:Label>
+            </div>
+
+
+        </div>
+    </div>
+             
+
+        <div class="container text-center">
+             <div class="info-line", "align-content-center" style="padding-top: 50px">
+                 <asp:Button ID="btnSave" runat="server" Text="Save" class="btn btn-info" Style="background-color: #66ccff" Width="100px" font="Calibri" Font-Size="Large" />
              </div>
         </div>
-        
-    </div>
+      
+       
 </asp:Content>
