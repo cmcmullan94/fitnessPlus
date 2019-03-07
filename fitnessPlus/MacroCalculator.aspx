@@ -24,8 +24,10 @@
             </div>
 
 
-             <div class="info-line", "input-group-text" style="padding-top: 20px">
+             <div class="info-line", "input-group-text", "col-centered" style="padding-top: 20px">
                 <label for="Goal" style="color: #66ccff">Goal </label>
+                 <br />
+                 <br />
                  <br />
                  <label for="rdBulk" style="color: #afabab">Bulk </label>
                     <input type="radio" id="rdBulk">&nbsp;&nbsp;&nbsp;&nbsp;
@@ -60,28 +62,30 @@
 
            
     <div class="container">
+
         <div class="row">
-
-
-            <div class="col-4">
-                <asp:Label ID="lblProtein" runat="server" Text="Protein: "></asp:Label>
+            <div class="col">
+                <asp:Label ID="lblProtein" runat="server" Text="Protein: " style="color: #afabab"></asp:Label>
                 <br />
-                <asp:Label ID="lblProteinReturn" runat="server" Text=" "></asp:Label>
+                <asp:Label ID="lblProteinReturn" runat="server" Text=" " style="color: #afabab"></asp:Label>
             </div>
-            <div class="col-4">
-                <asp:Label ID="lblCarbs" runat="server" Text="Carbs: "></asp:Label>
+        
+            <div class="col">
+                <asp:Label ID="lblCarbs" runat="server" Text="Carbs: " style="color: #afabab"></asp:Label>
                 <br />
-                <asp:Label ID="lblCarbReturn" runat="server" Text=" "></asp:Label>
+                <asp:Label ID="lblCarbReturn" runat="server" Text=" " style="color: #afabab"></asp:Label>
             </div>
-            <div class="col-4">
-                <asp:Label ID="lblFat" runat="server" Text="Fat: "></asp:Label>
+        
+            <div class="col">
+                <asp:Label ID="lblFat" runat="server" Text="Fat: " style="color: #afabab" ></asp:Label>
                 <br />
-                <asp:Label ID="lblFatReturn" runat="server" Text=" "></asp:Label>
+                <asp:Label ID="lblFatReturn" runat="server" Text=" " style="color: #afabab"></asp:Label>
             </div>
-
-
         </div>
+
+
     </div>
+    
              
 
         <div class="container text-center">
