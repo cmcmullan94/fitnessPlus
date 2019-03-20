@@ -63,11 +63,11 @@
                     </button>
                 </div>
 
-                <div class="nav navbar-nav collapse navbar-collapse" style="float: left">
+               <!-- <div class="nav navbar-nav collapse navbar-collapse" style="float: left">
                     <a class="nav-link" href="#">
                         <img src="Images/logo.png"/>
                         </a>
-                </div>
+                </div> -->
 
                 <div class="text-center">
                     <ul class="nav navbar-nav collapse navbar-collapse" style="font-family: Calibri; font-size: larger">

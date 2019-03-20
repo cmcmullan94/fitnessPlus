@@ -8,6 +8,53 @@
         }
     </style>
 
+    <script>
+        function getBodyWeight() {
+            var bw = document.getElementById("txtWeightInput");                 //taking user input, declaring as bodyweight
+
+            var numA = 14;                                                                       //set value for first instance of maintenance calc
+            var numB = 16;                                                                       //set value for second instance of maintenance calc
+            var fatA = 0.3;                                                                      //set value for first instance of fat calc
+            var fatB = 0.4;                                                                      //set value for second instance of fat calc
+            var maintResA, maintResB, maintResC, proteinCal, carbsCal, fatCal, totalFP;          //variables in kCals 
+            var maintenance, proteinGrams, carbsGrams, fatGrams, fatResA, fatResB, fatResC;      //variables in Grams
+
+            //Maintenance Calculation
+            maintResA = bw * numA;                                                                     //finding higher limit of maintenance
+            maintResB = bw * numB;                                                                     //finding lower limit of maintenance
+            maintResC = maintResA - maintResB;                                                         
+            maintenance = maintResC / 2 + maintResA;                                                   //finding middle of lower and upper
+
+            //Protein
+            proteinGrams = bw;                                                                          //setting grams of protein to bodyweight
+            proteinCal = proteinGrams * 4.0;                                                            //converting protein from grams to cals
+
+            //Fat
+            fatResA = bw * fatA;                                                                        //finding higher limit of fat
+            fatResB = bw * fatB;                                                                        //finding higher limit of fat
+            fatResC = fatResA - fatResB;                                                                
+            fatGrams = fatResC / 2 + fatResA;                                                           //finding middle of lower and upper limit
+
+            fatCal = fatGrams * 9.0;                                                                    //converting fat from grams to cals
+
+            //Carbs
+            totalFP = fatCal + proteinCal;                                                              //totalling fat and protein in grams 
+
+            carbsCal = maintenance - totalFP;
+            carbsGrams = carbsCal / 4;                                                                  //converting carbs from calories to grams
+
+            lblMaintReturn.Text = maintenance;
+            lblProteinReturn.Text = proteinGrams;
+            lblFatReturn.Text = fatGrams;
+            lblCarbReturn.Text = carbsGrams;
+        }
+
+        function getNumSpecific() {
+            var specific = document.getElementById("numSpecific");
+            return specific;
+        }
+    </script>
+
      <div class="container text-center" >   
                
          <div class="info-header", "col-lg-4 col-lg-offset-4">
@@ -17,7 +64,7 @@
                     Bodyweight - lbs 
                     <br />
                     <br />
-                    <input type="number" class="form-control" id="txtWeightInput" aria-describedby="BW" style="width: 200px" />
+                    <input type="number" class="form-control" id="txtWeightInput" aria-describedby="BW" style="width: 200px"/>
                     <br />
                     <small id="calcHelp" class="form-text text-muted">Macros are calculated using pounds!</small>
                 </label>
@@ -36,12 +83,12 @@
             </div>
 
 
-             <div class="info-line", "form-group", "col-centered" style="padding-top: 20px">
-                 <label for="numSpecific" style="color: #66ccff">
+             <div class="info-line", "form-group", "col-centered" style="padding-top: 20px"> 
+                 <label for="txtNumSpecific" style="color: #66ccff">
                      By how much?
                      <br />
                      <br />
-                     <input type="number" class="form-control" id="numSpecific" aria-describedby="specific" style="width: 200px" />
+                     <input type="number" class="form-control" id="txtNumSpecific" aria-describedby="specific" style="width: 200px" />
                      <br />
                      <small id="help" class="form-text text-muted">This is how much you want to deviate from your maintenance calories!</small>
                  </label>
@@ -49,7 +96,7 @@
 
 
              <div class="info-line", "align-content-center" style="padding-top: 50px">
-                 <asp:Button ID="btnDoCalc" runat="server" Text="GO!" OnClick="btnDoCalc_Click" class="btn btn-info" Style="background-color: #66ccff" Width="100px" font="Calibri" Font-Size="Large" />
+                 <asp:Button ID="btnDoCalc" runat="server" Text="GO!" OnClick="getBodyWeight()" value="Go" class="btn btn-info" Style="background-color: #66ccff" Width="100px" font="Calibri" Font-Size="Large" />
              </div>
 
              <div class="info-line", "align-content-center" style="padding-top: 50px">
