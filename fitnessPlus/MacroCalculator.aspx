@@ -47,7 +47,7 @@
                      <br />
                      <small id="help" class="form-text text-muted">This is how much you want to deviate from your maintenance calories!</small>
                  </label>
-            </div>
+             </div>
 
 
              <div class="info-line", "align-content-center" style="padding-top: 50px">
