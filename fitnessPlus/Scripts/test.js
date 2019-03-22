@@ -1,17 +1,12 @@
-﻿
+﻿//declaring all variables needed 
+var maintenance = 0;
+var proteinGrams = 0;
+var fatGrams = 0;
+var carbsGrams = 0;
 
-
-function calcMacros() {
-    //run all the functions via button click
-    calcMaintenance();
-    calcProtein();
-    calcFat();
-    calcCarbs();
-
-}
 
 //maintenance function
-let maintenance = function calcMaintenance(bw) {
+function calcMaintenance() {
     var bw = document.getElementById("txtWeightInput").value;
 
     var numA = 14;                                                            //set value for first instance of maintenance calc
@@ -33,7 +28,7 @@ let maintenance = function calcMaintenance(bw) {
 
 
 //protein function 
-let protein = function calcProtein(bw) {
+function calcProtein() {
     var bw = document.getElementById("txtWeightInput").value;
 
     var proteinGrams;
@@ -47,7 +42,7 @@ let protein = function calcProtein(bw) {
 }
 
 //fat function
-let fat = function calcFat(bw) {
+function calcFat() {
     var bw = document.getElementById("txtWeightInput").value;
 
     var fatA = 0.3;                                                           //set value for first instance of fat calc
@@ -67,7 +62,7 @@ let fat = function calcFat(bw) {
 }
 
 //carbs function
-let carbs = function calcCarbs(maintenance, proteinGrams, fatGrams, callback) {
+function calcCarbs() {
 
     var proteinCal, fatCal, totalFP, carbsCal, carbsGrams;
 
@@ -83,10 +78,5 @@ let carbs = function calcCarbs(maintenance, proteinGrams, fatGrams, callback) {
 
     document.getElementById("lblCarbReturn").innerHTML = carbsGrams;
 
-    carbsGrams = callback(maintenance, proteinGrams, fatGrams);
-
     return carbsGrams;
 }
-
-
-console.log("Carbs Value " + carbs);
