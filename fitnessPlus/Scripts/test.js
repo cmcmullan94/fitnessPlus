@@ -1,20 +1,22 @@
-﻿function calcMacros() {
-    this.calcMaintenance();
-    this.calcProtein();
-    this.calcFat();
-    this.calcCarbs();
+﻿
+
+
+function calcMacros() {
+    //run all the functions via button click
+    calcMaintenance();
+    calcProtein();
+    calcFat();
+    calcCarbs();
 
 }
 
-function calcMaintenance() {
-
-    var bw = document.getElementById("txtWeightInput").value;                 //taking user input, declaring as bodyweight
-
+//maintenance function
+let maintenance = function calcMaintenance(bw) {
+    var bw = document.getElementById("txtWeightInput").value;
 
     var numA = 14;                                                            //set value for first instance of maintenance calc
     var numB = 16;                                                            //set value for second instance of maintenance calc
     var maintResA, maintResB, maintResC;
-    //var maintenance;
 
     //Maintenance Calculation
     maintResA = bw * numA;                                                    //finding higher limit of maintenance
@@ -30,25 +32,23 @@ function calcMaintenance() {
 }
 
 
-function calcProtein() {
-    var bw = parseInt(document.getElementById("txtWeightInput").value);                 //taking user input, declaring as bodyweight
+//protein function 
+let protein = function calcProtein(bw) {
+    var bw = document.getElementById("txtWeightInput").value;
 
     var proteinGrams;
 
     //Protein
     proteinGrams = bw;                                                        //setting grams of protein to bodyweight
-    //proteinCal = proteinGrams * 4.0;                                          //converting protein from grams to cals
 
     document.getElementById("lblProteinReturn").innerHTML = proteinGrams;
 
     return proteinGrams;
-
 }
 
-
-
-function calcFat() {
-    var bw = parseInt(document.getElementById("txtWeightInput").value);                 //taking user input, declaring as bodyweight
+//fat function
+let fat = function calcFat(bw) {
+    var bw = document.getElementById("txtWeightInput").value;
 
     var fatA = 0.3;                                                           //set value for first instance of fat calc
     var fatB = 0.4;                                                           //set value for second instance of fat calc
@@ -61,20 +61,13 @@ function calcFat() {
     fatResC = fatResA - fatResB;
     fatGrams = fatResC / 2 + fatResA;                                         //finding middle of lower and upper limit
 
-    //fatCal = fatGrams * 9.0;                                                //converting fat from grams to cals
-
     document.getElementById("lblFatReturn").innerHTML = fatGrams;
 
     return fatGrams;
-
-    this.calcFat(this.fatGrams);
 }
 
-console.log(fatGrams);
-
-
-function calcCarbs(maintenance, proteinGrams, fatGrams) {
-    //var bw = document.getElementById("txtWeightInput").value;                 //taking user input, declaring as bodyweight
+//carbs function
+let carbs = function calcCarbs(maintenance, proteinGrams, fatGrams, callback) {
 
     var proteinCal, fatCal, totalFP, carbsCal, carbsGrams;
 
@@ -88,16 +81,12 @@ function calcCarbs(maintenance, proteinGrams, fatGrams) {
     carbsGrams = carbsCal / 4;                                                //converting carbs from calories to grams
 
 
-     
+    document.getElementById("lblCarbReturn").innerHTML = carbsGrams;
+
+    carbsGrams = callback(maintenance, proteinGrams, fatGrams);
 
     return carbsGrams;
-
-
-
 }
 
-console.log(carbsGrams);
 
-function test() {
-    alert("Testing");
-}
+console.log("Carbs Value " + carbs);

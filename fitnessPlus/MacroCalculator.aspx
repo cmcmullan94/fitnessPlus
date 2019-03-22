@@ -8,21 +8,23 @@
         }
     </style>
 
-    <script src="Scripts/macroCalculator.js"></script>
+   <!-- <script src="Scripts/macroCalculator.js"></script> -->
+    <script src="Scripts/test.js"></script>
+
 
      <div class="container text-center" >   
                
          <div class="info-header", "col-lg-4 col-lg-offset-4">
 
             <div class="info-line", "form-group", "col-centered">  
-                <label for="txtWeightInput" style="color: #66ccff">
+                <label for="txtWeightInput" style="color: #66ccff"> 
                     Bodyweight - lbs 
                     <br />
                     <br />
-                    <input type="number" class="form-control" id="txtWeightInput" aria-describedby="BW" style="width: 200px"/>
+                    <input type="number" class="form-control" Value="0" id="txtWeightInput" aria-describedby="BW" style="width: 200px"/>
                     <br />
                     <small id="calcHelp" class="form-text text-muted">Macros are calculated using pounds!</small>
-                </label>
+                </label> 
             </div>
 
 
@@ -66,24 +68,24 @@
      </div>
 
            
-    <div class="container">
-        <div class="row", "container-fluid" style="height: 150px">
-            <div class="col-xs-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
                 <Label ID="lblProtein"style="color: #afabab"> Protein: </Label>
                 <br />
-                <Label ID="lblProteinReturn"style="color: #afabab"></Label>
+                <Label ID="lblProteinReturn"style="color: #afabab">0</Label>
             </div>
         
-            <div class="col-xs-3">
+            <div class="col">
                 <Label ID="lblCarbs"style="color: #afabab">Carbs: </Label>
                 <br />
-                <Label ID="lblCarbReturn"style="color: #afabab"></Label>
+                <Label ID="lblCarbReturn"style="color: #afabab">0</Label>
             </div>
         
-            <div class="col-xs-3">
+            <div class="col">
                 <Label ID="lblFat" style="color: #afabab" >Fat: </Label>
                 <br />
-                <Label ID="lblFatReturn" style="color: #afabab"></Label>
+                <Label ID="lblFatReturn" style="color: #afabab">0</Label>
             </div>
         </div>
     </div>
