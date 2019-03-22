@@ -67,28 +67,25 @@
 
            
     <div class="container">
-
-        <div class="row">
-            <div class="col">
+        <div class="row", "container-fluid" style="height: 150px">
+            <div class="col-xs-3">
                 <Label ID="lblProtein"style="color: #afabab"> Protein: </Label>
                 <br />
                 <Label ID="lblProteinReturn"style="color: #afabab"></Label>
             </div>
         
-            <div class="col">
+            <div class="col-xs-3">
                 <Label ID="lblCarbs"style="color: #afabab">Carbs: </Label>
                 <br />
                 <Label ID="lblCarbReturn"style="color: #afabab"></Label>
             </div>
         
-            <div class="col">
+            <div class="col-xs-3">
                 <Label ID="lblFat" style="color: #afabab" >Fat: </Label>
                 <br />
                 <Label ID="lblFatReturn" style="color: #afabab"></Label>
             </div>
         </div>
-
-
     </div>
     
              

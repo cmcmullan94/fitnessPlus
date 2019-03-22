@@ -24,8 +24,6 @@ function calcMaintenance() {
     document.getElementById("lblMaintReturn").innerHTML = maintenance;
 
     return maintenance;
-
-
 }
 
 function calcProtein() {
@@ -40,7 +38,6 @@ function calcProtein() {
     document.getElementById("lblProteinReturn").innerHTML = proteinGrams;
 
     return proteinGrams;
-
 }
 
 function calcFat() {
@@ -62,8 +59,6 @@ function calcFat() {
     document.getElementById("lblFatReturn").innerHTML = fatGrams;
 
     return fatGrams;
-
-
 }
 
 var maintenance = calcMaintenance();
