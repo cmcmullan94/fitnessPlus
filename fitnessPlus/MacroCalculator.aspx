@@ -8,8 +8,8 @@
         }
     </style>
 
-   <!-- <script src="Scripts/macroCalculator.js"></script> -->
-    <script src="Scripts/test.js"></script>
+   <script src="Scripts/macroCalculator.js"></script> 
+    
 
 
      <div class="container text-center" >   
