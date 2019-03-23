@@ -4,6 +4,13 @@ var proteinGrams = 0;
 var fatGrams = 0;
 var carbsGrams = 0;
 
+function calcMacros(){
+    calcMaintenance();
+    calcProtein();
+    calcFat();
+    calcCarbs();
+}
+
 
 //maintenance function
 function calcMaintenance() {
