@@ -16,36 +16,30 @@ function calcMacros(){
 function calcMaintenance() {
     var bw = document.getElementById("txtWeightInput").value;
 
-    var numA = 14;                                                            //set value for first instance of maintenance calc
-    var numB = 16;                                                            //set value for second instance of maintenance calc
-    var maintResA, maintResB, maintResC;
+    var numA = 14;                                                            //set value for first instance of maintenance calc                                           
+    var maintResA;
 
     //Maintenance Calculation
-    maintResA = bw * numA;                                                    //finding higher limit of maintenance
-    maintResB = bw * numB;                                                    //finding lower limit of maintenance
-    maintResC = maintResA - maintResB;
-    maintenance = maintResC / 2 + maintResA;                                  //finding middle of lower and upper
+    maintResA = bw * numA;                                                    //finding lower limit of maintenance
 
-    document.getElementById("lblMaintReturn").innerHTML = maintenance;
-
-    return maintenance;
-
+    maintenance = +bw + +maintResA;                                           //adding lower limit to bw to get maintenance (+ before variables converts to int)
     
+    document.getElementById("lblMaintReturn").innerHTML = maintenance;        //updating label element 
+
+    return maintenance;                                                       //result
 }
+
+console.log("Maintenance = " + maintenance);
 
 
 //protein function 
 function calcProtein() {
     var bw = document.getElementById("txtWeightInput").value;
 
-    var proteinGrams;
+    //protein has 1:1 lb to BW ratio
+    document.getElementById("lblProteinReturn").innerHTML = bw;
 
-    //Protein
-    proteinGrams = bw;                                                        //setting grams of protein to bodyweight
-
-    document.getElementById("lblProteinReturn").innerHTML = proteinGrams;
-
-    return proteinGrams;
+    return bw;
 }
 
 //fat function
@@ -54,31 +48,35 @@ function calcFat() {
 
     var fatA = 0.3;                                                           //set value for first instance of fat calc
     var fatB = 0.4;                                                           //set value for second instance of fat calc
+    var fatLow, fatHigh, fatResC, fatResD;
 
-    var fatGrams, fatResA, fatResB, fatResC;
+    //Fat Calculation
+    fatLow = bw * fatA;                                                      //finding lower limit of fat
+    fatHigh = bw * fatB;                                                     //finding higher limit of fat
+    fatResC = fatHigh - fatLow;                                              //finding difference in low and high
+    fatResD = fatResC / 2;                                                   //divide difference in 2
 
-    //Fat
-    fatResA = bw * fatA;                                                      //finding higher limit of fat
-    fatResB = bw * fatB;                                                      //finding higher limit of fat
-    fatResC = fatResA - fatResB;
-    fatGrams = fatResC / 2 + fatResA;                                         //finding middle of lower and upper limit
+    fatGrams = +fatResD + +fatLow;                                           //add difference to lower limit 
 
-    document.getElementById("lblFatReturn").innerHTML = fatGrams;
+    document.getElementById("lblFatReturn").innerHTML = fatGrams;            //set label to result
 
     return fatGrams;
 }
 
+console.log("Fat Grams = " + fatGrams);
+
 //carbs function
 function calcCarbs() {
+    var bw = document.getElementById("txtWeightInput").value;
 
     var proteinCal, fatCal, totalFP, carbsCal, carbsGrams;
 
-    //Carbs
-    proteinCal = proteinGrams * 4.0;                                          //converting protein from grams to cals
-    fatCal = fatGrams * 9.0;                                                  //converting fat from grams to cals
+    proteinCal = bw * 4         //converting protein in grams (bw) to protein calories
+    fatCal = fatGrams * 9                            //convert fat in grams to calories
 
+
+    //carbs
     totalFP = fatCal + proteinCal;                                            //totalling fat and protein in grams 
-
     carbsCal = maintenance - totalFP;
     carbsGrams = carbsCal / 4;                                                //converting carbs from calories to grams
 
@@ -86,4 +84,7 @@ function calcCarbs() {
     document.getElementById("lblCarbReturn").innerHTML = carbsGrams;
 
     return carbsGrams;
+
 }
+
+console.log("Carbs Grams = " + carbsGrams);
