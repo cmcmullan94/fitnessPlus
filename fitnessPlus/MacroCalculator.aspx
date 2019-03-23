@@ -6,6 +6,18 @@
         .col-centered {
             margin: auto;
         }
+
+        #btnDoCalc {
+            width: 100px;
+            font-family: Calibri;
+            font-size: large;
+        }
+
+        #btnSave {
+            width: 100px;
+            font-family: Calibri;
+            font-size: large;
+        }
     </style>
 
    <script src="Scripts/macroCalculator.js"></script> 
@@ -53,21 +65,19 @@
 
 
              <div class="info-line", "align-content-center" style="padding-top: 50px">
-                 <input type="button" id="btnDoCalc" Value="GO!" class="btn btn-info" style="background-color: #66CCFF" onclick="calcMacros()" />
-                 <!-- <asp:Button ID="btnDoCalc2" runat="server" Text="GO!" class="btn btn-info" Style="background-color: #66ccff" Width="100px" font="Calibri" Font-Size="Large" OnClientClick="calcMacros()" /> -->
+                 <input type="button" id="btnDoCalc" Value="GO!" class="btn btn-info" style="background-color: #66CCFF"  onclick="calcMacros()" />
              </div>
 
 
              <div class="info-line", "align-content-center" style="padding-top: 50px">
-                 
                  <Label ID="lblmaintenanceCalories" style="color: #afabab"> Maintenance Calories: </Label>
+                 <br />
                  <Label ID="lblMaintReturn" style="color: #afabab"> </Label>
              </div>
          </div>
 
      </div>
 
-           
     <div class="container-fluid">
         <div class="row">
             <div class="col">
@@ -90,11 +100,9 @@
         </div>
     </div>
     
-             
-
-        <div class="container text-center">
+    <div class="container text-center">
              <div class="info-line", "align-content-center" style="padding-top: 50px">
-                 <asp:Button ID="btnSave" runat="server" Text="Save" class="btn btn-info" Style="background-color: #66ccff" Width="100px" font="Calibri" Font-Size="Large" OnClientClick="test()" />
+                 <input type="button" id="btnSave" value="Save!" class="btn btn-info" Style="background-color: #66ccff" OnClick="test()" />
              </div>
         </div>
       

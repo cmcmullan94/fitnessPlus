@@ -10,8 +10,6 @@
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
-        
-        <!--<script src="Scripts/macroCalculator.js"></script>-->
 
     </asp:PlaceHolder>
 

@@ -146,7 +146,6 @@
     <Content Include="Images\welcomePageLogo.png" />
     <Content Include="logIn.aspx" />
     <Content Include="Scripts\macroCalculator.js" />
-    <Content Include="Scripts\test.js" />
     <Content Include="welcomePage.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Images\logo.png" />
