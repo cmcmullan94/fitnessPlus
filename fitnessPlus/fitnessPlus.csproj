@@ -159,6 +159,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\WebForms\test.js" />
     <Content Include="test.aspx" />
     <Content Include="welcomePage.aspx" />
     <Content Include="Scripts\esm\popper.min.js.map" />

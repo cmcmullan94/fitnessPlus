@@ -25,7 +25,8 @@
         }
     </style>
 
-   <script src="Scripts/macroCalculator.js"></script> 
+  <!-- <script src="Scripts/macroCalculator.js"></script>--> 
+    <script src="Scripts/WebForms/test.js"></script>
     
 
 
@@ -46,11 +47,12 @@
 
 
              <div class="radio" role="group" aria-label="radioButtons">
-                 <label><input type="radio" id="rdBulk" name="radio"/> Bulk </label>
+                 <label style="font-size:larger"><input type="radio" id="rdBulk" name="radio"/> Bulk </label>
                  &nbsp;&nbsp;&nbsp;
-                 <label><input type="radio" id="rdCut" name="radio"/> Cut </label>
+                 <label style="font-size:larger"><input type="radio" id="rdCut" name="radio"/> Cut </label>
                  <br />
-                 <label><input type="radio" id="rdNeither" name="radio"/> Neither! </label>
+                 <br />
+                 <label style="font-size:larger"><input type="radio" id="rdNeither" name="radio"/> Neither! </label>
              </div>
 
              <div class="info-line", "form-group", "col-centered" style="padding-top: 20px"> 
@@ -73,7 +75,7 @@
              <div class="info-line", "align-content-center" style="padding-top: 50px">
                  <Label ID="lblmaintenanceCalories" style="color: #afabab"> Maintenance Calories: </Label>
                  <br />
-                 <Label ID="lblMaintReturn" style="color: #afabab"> </Label>
+                 <Label ID="lblMaintReturn" style="color: #afabab">0</Label>
              </div>
          </div>
 
