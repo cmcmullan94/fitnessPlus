@@ -15,16 +15,34 @@ function calcMacros() {
 //maintenance function
 function calcMaintenance() {
     var bw = document.getElementById("txtWeightInput").value;
+    var specific = document.getElementById("txtNumSpecific").value;
 
-    var numA = 14;                                                            //set value for first instance of maintenance calc                                           
+    var numA = 14;                                                            //set value for lower limit of maintenance value                                      
     var maintResA;
 
     //Maintenance Calculation
     maintResA = bw * numA;                                                    //finding lower limit of maintenance
 
-    maintenance = +bw + +maintResA;                                           //adding lower limit to bw to get maintenance (+ before variables converts to int)
+    if (document.getElementById("rdBulk").checked) {
+        maintenance = +bw + +maintResA + +specific;
 
-    document.getElementById("lblMaintReturn").innerHTML = maintenance;        //updating label element 
+        document.getElementById("lblMaintReturn").innerHTML = maintenance;        //updating label element
+    } else if (document.getElementById("rdCut").checked) {
+        maintenance = +bw + maintResA - +specific;
+
+        document.getElementById("lblMaintReturn").innerHTML = maintenance;        //updating label element
+    } else {
+
+        document.getElementById("lblMaintReturn").innerHTML = maintenance;        //updating label element
+        return maintResA;
+    }
+
+    console.log("MaintRes A after if = " + maintResA);
+    console.log("Specific = " + specific);
+
+   // maintenance = +bw + +maintResA;                                           //adding lower limit to bw to get maintenance (+ before variables converts to int)
+
+   //document.getElementById("lblMaintReturn").innerHTML = maintenance;        //updating label element 
 
     return maintenance;                                                       //result
 }
@@ -81,7 +99,10 @@ function calcCarbs() {
     carbsGrams = carbsCal / 4;                                                //converting carbs from calories to grams
 
 
+    Math.round(carbsGrams);    
+
     document.getElementById("lblCarbReturn").innerHTML = carbsGrams;
+
 
     return carbsGrams;
 
