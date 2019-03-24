@@ -1,4 +1,4 @@
-﻿ <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="fitnessPlus.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="fitnessPlus.SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -10,27 +10,19 @@
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
-
     </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <!-- <webopt:bundlereference runat="server" path="~/Content/css" /> -->
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-    <style type="text/css">
-        @media screen and (min-width: 768px) {
-            .navbar-nav {
-                float: none;
-                text-align: center;
-            }
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
-                .navbar-nav li {
-                    display: inline-block;
-                    float: none;
-                }
-        }
-    </style>
 
 </head>
+
 <body>
     <form runat="server">
         <asp:ScriptManager runat="server">
@@ -53,64 +45,30 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #afabab">
+        <nav class="navbar navbar-default" style="background-color: #afabab">
             <div class="container-fluid">
-
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+                    <!-- <a href="#"><img src="Images/logo.png" /></a> -->
+                    <a class="navbar-brand" href="#">fitnessPlus</a>
                 </div>
-
-               <!-- <div class="nav navbar-nav collapse navbar-collapse" style="float: left">
-                    <a class="nav-link" href="#">
-                        <img src="Images/logo.png"/>
-                        </a>
-                </div> -->
-
-                <div class="text-center">
-                    <ul class="nav navbar-nav collapse navbar-collapse" style="font-family: Calibri; font-size: larger">
-                        <li class="nav-item">
-                            <a class="nav-link" href='#' style="color: #000000">myMacros </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href='#' style="color: #000000">myPlan </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href='#' style="color: #000000">myTargets </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href='#' style="color: #000000">myCheck-In </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href='#' style="color: #000000">myFeedback </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href='#' style="color: #000000">myRewards </a>
-                        </li>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" style="font-family: Calibri; font-size: larger; color: #000000">myMacros</a></li>
+                        <li><a href="#" style="font-family: Calibri; font-size: larger; color: #000000">myPlan</a></li>
+                        <li><a href="#" style="font-family: Calibri; font-size: larger; color: #000000">myTargets</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
                     </ul>
                 </div>
-
-                <!-- <div class="text-right">
-
-                    <ul class="nav navbar-nav" style="text-align: right">
-                        <li class="nav-item">
-                            <a class="nav-link" href='https://www.facebook.com/'>
-                                <img src="Images/facebook.png" />
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href='https://www.instagram.com/'>
-                                <img src="Images/instagram.png" />
-                            </a>
-                        </li>
-                    </ul>
-                </div> -->
-
             </div>
-        </div>
+        </nav>
 
 
 
@@ -119,29 +77,7 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
-        
-
-
-            <!--footer for all web pages -->
-          <!--  <footer class="row", "container-fluid", "fixed-bottom">
-                <div class="col-xs-3" style="height: 300px">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2306.271086403075!2d-5.884924683984847!3d54.687257081127356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4861a77c7aae3041%3A0xbea2d9c54f43e8f4!2sUlster+University!5e0!3m2!1sen!2suk!4v1550332980379" width="300" height="175" frameborder="0" style="border: 0" allowfullscreen></iframe>
-                </div>
-                <div class="col-xs-3", "text-center" style="height: 300px">
-                    <p class="text-center">Contact:</p>
-                    <p class="text-center">07842821505</p>
-                    <p class="text-center">fitnesshelp@fitness.com</p>
-                </div>
-                <div class="col-xs-3", "text-center" style="height: 300px">
-                    <p class="text-center">Copyright:</p>
-                    <p class="text-center">Ulster University - <%: DateTime.Now.Year %></p>
-                    <p class="text-center">Version 1.0</p>
-                </div>
-                <div class="col-xs-3" style="height: 300px">
-                    <img class="center-block" src="Images/footerLogo.png" />
-                </div>
-            </footer> -->
-        </div> 
+        </div>
 
     </form>
 </body>

@@ -23,18 +23,21 @@ function calcMaintenance() {
     //Maintenance Calculation
     maintResA = bw * numA;                                                    //finding lower limit of maintenance
 
-    if (document.getElementById("rdBulk").checked) {
+    if (document.getElementById("rdBulk").checked == true) {
         maintenance = +bw + +maintResA + +specific;
 
         document.getElementById("lblMaintReturn").innerHTML = maintenance;        //updating label element
-    } else if (document.getElementById("rdCut").checked) {
-        maintenance = +bw + maintResA - +specific;
+    } else if (document.getElementById("rdCut").checked == true) {
+        maintenance = +bw + +maintResA - +specific;
+
+        document.getElementById("lblMaintReturn").innerHTML = maintenance;        //updating label element
+    } else if (document.getElementById("rdNeither").checked == true) {
+        maintenance = +bw + +maintResA;
 
         document.getElementById("lblMaintReturn").innerHTML = maintenance;        //updating label element
     } else {
-
         document.getElementById("lblMaintReturn").innerHTML = maintenance;        //updating label element
-        return maintResA;
+        return maintenance;
     }
 
     console.log("MaintRes A after if = " + maintResA);

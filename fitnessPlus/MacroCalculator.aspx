@@ -18,6 +18,11 @@
             font-family: Calibri;
             font-size: large;
         }
+
+        .radio {
+            font-family: Calibri;
+            color: #afabab;
+        }
     </style>
 
    <script src="Scripts/macroCalculator.js"></script> 
@@ -40,17 +45,13 @@
             </div>
 
 
-             <div class="info-line", "input-group-text", "col-centered" style="padding-top: 20px">
-                <label for="Goal" style="color: #66ccff">Goal </label>
+             <div class="radio" role="group" aria-label="radioButtons">
+                 <label><input type="radio" id="rdBulk" name="radio"/> Bulk </label>
+                 &nbsp;&nbsp;&nbsp;
+                 <label><input type="radio" id="rdCut" name="radio"/> Cut </label>
                  <br />
-                 <br />
-                 <br />
-                 <label for="rdBulk" style="color: #afabab">Bulk </label>
-                    <input type="radio" id="rdBulk">&nbsp;&nbsp;&nbsp;&nbsp;
-                 <label for="rdCut" style="color: #afabab">Cut </label>
-                    <input type="radio" id="rdCut">
-            </div>
-
+                 <label><input type="radio" id="rdNeither" name="radio"/> Neither! </label>
+             </div>
 
              <div class="info-line", "form-group", "col-centered" style="padding-top: 20px"> 
                  <label for="txtNumSpecific" style="color: #66ccff">
@@ -105,6 +106,7 @@
                  <input type="button" id="btnSave" value="Save!" class="btn btn-info" Style="background-color: #66ccff" OnClick="test()" />
              </div>
         </div>
+    
       
        
 </asp:Content>

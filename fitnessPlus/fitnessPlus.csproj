@@ -139,6 +139,7 @@
     <Content Include="Images\favicon.png" />
     <Content Include="Images\footerLogo.png" />
     <Content Include="Images\instagram.png" />
+    <Content Include="Images\logo.png" />
     <Content Include="Images\welcomePageLogo.png" />
     <Content Include="logIn.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -175,7 +176,6 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Images\logo.png" />
     <Content Include="MacroCalculator.aspx" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
