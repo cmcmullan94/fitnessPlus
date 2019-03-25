@@ -68,7 +68,7 @@
 
 
              <div class="info-line", "align-content-center" style="padding-top: 50px">
-                 <input type="button" id="btnDoCalc" Value="GO!" class="btn btn-info" style="background-color: #66CCFF"  onclick="calcMacros()" />
+                 <input type="button" id="btnDoCalc" Value="GO!" class="btn btn-info" style="background-color: #66CCFF" onclick="calcMacros()"/>
              </div>
 
 
