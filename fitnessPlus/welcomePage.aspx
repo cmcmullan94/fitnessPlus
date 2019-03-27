@@ -7,17 +7,14 @@
 
     <link rel="icon" href="Images/favicon.png" />
     <title></title>
-    <link href="Content/bootstrap.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
     <style type="text/css">
-        .navbar-nav{
-            float: none;
-            text-align: center;
-        }
-        .navbar-nav li{
-            display: inline-block;
-            float: none;
-        }
+        
     </style>
 
 </head>
@@ -26,35 +23,21 @@
 
 
         <!-- Header content, separate from site.master -->
-        <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #afabab">
+        <nav class="navbar navbar-default" style="background-color: #afabab">
             <div class="container-fluid">
-
-                <div class="navbar-header" >
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                <div class="navbar-header">
+                    
+                    <!-- <a href="#"><img src="Images/logo.png" /></a> -->
+                    <a class="navbar-brand" href="#">fitnessPlus</a>
                 </div>
-
-                    <ul class="nav navbar-nav" >
-                        <li class="nav-item"> 
-                            <a class="nav-link" href='https://www.facebook.com/'> <img src="Images/facebook.png" /> </a>
-                        </li>
-                        <li class="nav-item"> 
-                            <a class="nav-link" href='https://www.instagram.com/'> <img src="Images/instagram.png" /> </a>
-                        </li>
-                    </ul> 
-
-                <div class="navbar-collapse collapse" >
-                    <ul class="nav navbar-nav">
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                        <li><a href="logIn.aspx"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
                     </ul>
                 </div>
-
             </div>
-
-        </div>
-
+        </nav>
         <!-- Main body content here 
             "info-line = allows for vertical stacking "-->
 
@@ -76,9 +59,7 @@
                 &nbsp;
                 &nbsp;
                 &nbsp;
-                <div class="info-line", "align-content-center">
-                    <asp:Button ID="btnPreview" runat="server" Text="Preview!" class="btn btn-info" style="background-color: #66ccff" Width="100px" font="Calibri" Font-Size="Large" href=""/>
-                </div>
+                
             </div>
        </div>
 

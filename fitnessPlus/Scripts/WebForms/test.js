@@ -1,10 +1,6 @@
-﻿//method call from button click
-//function calcMacros() {
-//    calcMaintenance();
-//    calcProtein();
-//    calcFat();
-//    calcCarbs();
-//}
+﻿//Test file for updated code of macroCalculator.js
+//this code is object orientated 
+//current issue - returning null values from user input
 
 
 document.getElementById("btnDoCalc").onclick = calcMacros();
