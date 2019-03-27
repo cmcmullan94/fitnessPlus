@@ -8,13 +8,17 @@
     <link rel="icon" href="Images/favicon.png" />
     <title></title>
     
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
     <style type="text/css">
-        
+        #btnEnter {
+            width: 100px;
+            font-family: Calibri;
+            font-size: large;
+        }
     </style>
 
 </head>
@@ -42,25 +46,24 @@
             "info-line = allows for vertical stacking "-->
 
        <div class="container text-center">
-               
-            <div class="info-header", "col-lg-4 col-lg-offset-4" style="padding-top: 100px">
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                <div class="info-line">
-                    <img src="Images/welcomePageLogo.png" class="rounded", "img-fluid" alt="..."/>
+
+           <!-- Main Content -->
+           <div class="row">
+                <div class="col-sm-4">
                 </div>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                <div class="info-line", "align-content-center">
-                    <asp:Button ID="btnLogIn" runat="server" Text="Log In" class="btn btn-info" style="background-color: #66ccff" Width="100px" font="Calibri" Font-Size="Large" OnClick="btnLogIn_Click" />
+
+                <div class="col-sm-4">
+                    <img src="Images/welcomePageLogo.png" class="rounded" onclick="window.location = 'logIn.aspx' "/>
+                    <br />
+                    <br />
+                    <br />
+                    <!-- <input type="button" id="btnEnter" value="Enter!" name="Enter" class="btn btn-info" style="background-color: #66ccff" onclick="window.location = 'logIn.aspx'" /> -->
                 </div>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                
-            </div>
+
+                <div class="col-sm-4">
+                </div>
+          </div>
+
        </div>
 
     </form>

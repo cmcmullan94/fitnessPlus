@@ -61,6 +61,9 @@
                         <li><a href="MacroCalculator.aspx" style="font-family: Calibri; font-size: larger; color: #000000">myMacros</a></li>
                         <li><a href="#" style="font-family: Calibri; font-size: larger; color: #000000">myPlan</a></li>
                         <li><a href="#" style="font-family: Calibri; font-size: larger; color: #000000">myTargets</a></li>
+                        <li><a href="#" style="font-family: Calibri; font-size: larger; color: #000000">myProfile</a></li>
+                        <li><a href="#" style="font-family: Calibri; font-size: larger; color: #000000">myHome</a></li>
+                        <li><a href="#" style="font-family: Calibri; font-size: larger; color: #000000"></a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
