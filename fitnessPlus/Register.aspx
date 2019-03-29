@@ -16,9 +16,9 @@
 
     <script type="text/javascript">
         $(function () {
-            $('#datetimepicker1').datetimepicker();
-            format: 'dd-mm-yyyy',
+            $('#datetimepicker1').data("DateTimePicker").date(new Date());
         });
+
     </script>
 
     <style type="text/css">
@@ -96,7 +96,7 @@
                 <div class="col-sm-4">
                 </div>
 
-                <div class="col-sm-4" >
+                <div class="col-sm-4">
 
                     <label for="txtForenameInput" style="color: #66ccff">
                         Forename
@@ -122,7 +122,8 @@
 
                 <div class="col-sm-4" style="padding-top: 50px">
 
-                    <label for="txtDOB" style="color: #66ccff">D.O.B </label>
+                    <label for="txtDOB" style="color: #66ccff">
+                        D.O.B 
                     <div class="form-group">
                         <div class='input-group date' id='datetimepicker1' style="width: 300px">
                             <input type='text' class="form-control" />
@@ -131,12 +132,15 @@
                             </span>
                         </div>
                     </div>
+                    </label>
 
-                    <label for="sex" style="color: #66ccff">Sex</label>
+                    <label for="sex" style="color: #66ccff">
+                        Sex
                     <select class="form-control" id="sex" style="width: 300px">
                         <option>Male</option>
                         <option>Female</option>
                     </select>
+                    </label>
                 </div>
 
                 <div class="col-sm-4">
@@ -156,7 +160,7 @@
                         <input type="password" class="form-control" id="txtPassword" aria-describedby="password" placeholder="Password" style="width: 150px" />
                     </label>
                     <label for="txtPasswordConfirm" style="color: #66ccff; padding-top: 50px;">
-                         Confirm Password 
+                        Confirm Password 
                         <br />
                         <input type="password" class="form-control" id="txtPasswordConfirm" aria-describedby="password confirm" placeholder="Confirm" style="width: 150px" />
                     </label>

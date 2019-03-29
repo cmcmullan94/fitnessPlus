@@ -19,6 +19,18 @@
             font-family: Calibri;
             font-size: large;
         }
+
+        #btnLogIn{
+            width: 100px;
+            font-family: Calibri;
+            font-size: large;
+        }
+
+        #btnRegister {
+            width: 100px;
+            font-family: Calibri;
+            font-size: large;
+        }
     </style>
 
 </head>
