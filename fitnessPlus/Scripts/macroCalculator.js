@@ -107,8 +107,7 @@ function calcCarbs() {
     document.getElementById("lblCarbReturn").innerHTML = carbsGrams;
 
 
-    return carbsGrams;
+    return this.carbsGrams;
 
 }
 
-console.log("Carbs Grams = " + carbsGrams);
