@@ -126,20 +126,20 @@
                 <div class="col-sm-4" style="padding-top: 50px">
 
                     <label for="txtDOB" style="color: #66ccff">
-                        D.O.B 
+                        D.O.B </label>
                     <div class="form-group">
-                        <div class='input-group date' id='datetimepicker1' style="width: 300px">
+                        <div class='input-group date' id='datetimepicker1'>
                             <input type='text' class="form-control" />
                             <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-calendar"></span>
                             </span>
                         </div>
                     </div>
-                    </label>
+                    
 
                     <label for="sex" style="color: #66ccff">
                         Sex
-                    <select class="form-control" id="sex" style="width: 300px">
+                    <select class="form-control" id="sex">
                         <option>Male</option>
                         <option>Female</option>
                     </select>
@@ -180,10 +180,7 @@
                 </div>
 
                 <div class="col-sm-4" style="padding-top: 50px">
-
                     <input type="button" id="btnRegister" value="Register!" name="register" class="btn btn-info" style="background-color: #66CCFF" onclick=" " />
-
-
                 </div>
 
                 <div class="col-sm-4">

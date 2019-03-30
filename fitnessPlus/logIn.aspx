@@ -67,11 +67,15 @@
                 <div class="col-sm-4">
 
                     <label for="frmEmail" style="color: #66ccff">
-                        Email 
-                        <br />
-                        <br />
-                        <input type="email" class="form-control" id="frmEmail" aria-describedby="emailHelp" placeholder="Enter email" style="width: 200px" />
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        Email   
+                        <input type="email" class="form-control" id="frmEmail" aria-describedby="emailHelp" placeholder="Enter email" />
+                    </label>
+                    <br />
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your details with anyone else.</small>
+
+                    <label for="frmPass" style="color: #66ccff; padding-top: 25px;">
+                        Password 
+                        <input type="password" class="form-control" id="frmPass" aria-describedby="passwordHelp" placeholder="Password"  />
                     </label>
 
                 </div>
@@ -84,12 +88,7 @@
                 <div class="col-sm-4">
                 </div>
                 <div class="col-sm-4">
-                    <label for="frmPass" style="color: #66ccff; padding-top: 50px;">
-                        Password 
-                        <br />
-                        <br />
-                        <input type="password" class="form-control" id="frmPass" aria-describedby="passwordHelp" placeholder="Password" style="width: 200px" />
-                    </label>
+                    
 
                 </div>
                 <div class="col-sm-4">
@@ -108,7 +107,7 @@
 
                     <p style="padding-top: 50px">Not already with us? Join here!</p>
 
-                    <input type="button" id="btnRegister" value="Register" name="button" class="btn btn-info" style="background-color: #66CCFF" onclick=" " />
+                    <input type="button" id="btnRegister" value="Register" name="button" class="btn btn-info" style="background-color: #66CCFF" onclick="window.location = 'Register.aspx'" />
 
                 </div>
 
@@ -117,9 +116,7 @@
 
             </div>
 
-        </div>
-        <!-- Container close -->
-               
+        </div><!-- Container close -->    
     </form>
 </body>
 </html>
