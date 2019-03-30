@@ -34,14 +34,15 @@
             <div class="col-sm-4">
             </div>
              <div class="col-sm-4">
-                <label for="txtWeightInput" style="color: #66ccff"> 
+                <label for="txtWeightInput" style="color: #66ccff" > 
                         Bodyweight - lbs 
                         <br />
                         <br />
-                        <input type="number" class="form-control" Value="0" id="txtWeightInput" aria-describedby="BW" style="width: 200px"/>
-                        <br />
+                        <input type="number" class="form-control" Value="0" id="txtWeightInput" aria-describedby="BW" />
+                        <br />    
                         <small id="calcHelp" class="form-text text-muted">Macros are calculated using pounds!</small>
-                    </label>
+                 </label>
+                 <br />
             </div>
              <div class="col-sm-4">   
                  <div id="piechart"></div>
@@ -78,9 +79,9 @@
                      By how much?
                      <br />
                      <br />
-                     <input type="number" class="form-control" Value="0" id="txtNumSpecific" aria-describedby="specific" style="width: 200px" />
+                     <input type="number" class="form-control" Value="0" id="txtNumSpecific" aria-describedby="specific" />
                      <br />
-                     <small id="help" class="form-text text-muted">This is how much you want to deviate from your maintenance calories!</small>
+                     <small id="help" class="form-text text-muted">This is how much you want to deviate <br /> from your maintenance calories!</small>
                  </label>
 
             </div>
