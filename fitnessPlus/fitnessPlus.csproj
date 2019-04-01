@@ -135,12 +135,14 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\beginnerIcon2.png" />
+    <Content Include="Images\expertIcon2.png" />
     <Content Include="Images\facebook.png" />
     <Content Include="Images\favicon.png" />
     <Content Include="Images\footerLogo.png" />
     <Content Include="Images\instagram.png" />
+    <Content Include="Images\intermediateIcon2.png" />
     <Content Include="Images\logo.png" />
-    <Content Include="Images\strengthIcon.png" />
     <Content Include="Images\welcomePageLogo.png" />
     <Content Include="logIn.aspx" />
     <Content Include="myPlan.aspx" />

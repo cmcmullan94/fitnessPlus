@@ -25,7 +25,7 @@
                         Beginner
                         <br />
                         <br />
-                        <img src="Images/strengthIcon.png" />
+                        <img src="Images/beginnerIcon2.png" />
                         <br />
                         <br />
                         <input type="button" id="btnViewStrength1" value="View" class="btn btn-info" style="background-color: #66CCFF" onclick="#" />
@@ -46,6 +46,9 @@
                         Beginner
                         <br />
                         <br />
+                        <img src="Images/beginnerIcon2.png" />
+                        <br />
+                        <br />
                         <input type="button" id="btnViewFitness1" value="View" class="btn btn-info" style="background-color: #66CCFF" onclick="#" />
                     </label>
                 </div>
@@ -62,6 +65,9 @@
                         <br />
                         <br />
                         Beginner
+                        <br />
+                        <br />
+                        <img src="Images/beginnerIcon2.png" />
                         <br />
                         <br />
                         <input type="button" id="btnViewAesthetics1" value="View" class="btn btn-info" style="background-color: #66CCFF" onclick="#" />
@@ -85,6 +91,9 @@
                         Intermediate
                         <br />
                         <br />
+                        <img src="Images/intermediateIcon2.png" />
+                        <br />
+                        <br />
                         <input type="button" id="btnViewStrength2" value="View" class="btn btn-info" style="background-color: #66CCFF" onclick="#" />
                     </label>
                 </div>
@@ -103,6 +112,9 @@
                         Intermediate
                         <br />
                         <br />
+                        <img src="Images/intermediateIcon2.png" />
+                        <br />
+                        <br />
                         <input type="button" id="btnViewFitness2" value="View" class="btn btn-info" style="background-color: #66CCFF" onclick="#" />
                     </label>
                 </div>
@@ -119,6 +131,9 @@
                         <br />
                         <br />
                         Beginner
+                        <br />
+                        <br />
+                        <img src="Images/intermediateIcon2.png" />
                         <br />
                         <br />
                         <input type="button" id="btnViewAesthetics2" value="View" class="btn btn-info" style="background-color: #66CCFF" onclick="#" />
@@ -143,6 +158,9 @@
                         Expert
                         <br />
                         <br />
+                        <img src="Images/expertIcon2.png" />
+                        <br />
+                        <br />
                         <input type="button" id="btnViewStrength3" value="View" class="btn btn-info" style="background-color: #66CCFF" onclick="#" />
                     </label>
                 </div>
@@ -162,6 +180,9 @@
                         Expert
                         <br />
                         <br />
+                        <img src="Images/expertIcon2.png" />
+                        <br />
+                        <br />
                         <input type="button" id="btnViewFitness3" value="View" class="btn btn-info" style="background-color: #66CCFF" onclick="#" />
                     </label>
                 </div>
@@ -179,6 +200,9 @@
                         <br />
                         <br />
                         Expert
+                        <br />
+                        <br />
+                        <img src="Images/expertIcon2.png" />
                         <br />
                         <br />
                         <input type="button" id="btnViewAesthetics3" value="View" class="btn btn-info" style="background-color: #66CCFF" onclick="#" />
