@@ -20,7 +20,7 @@
             font-size: large;
         }
 
-        #btnLogIn{
+        #btnLogIn {
             width: 100px;
             font-family: Calibri;
             font-size: large;
@@ -36,6 +36,25 @@
 </head>
 <body>
     <form id="form1" runat="server">
+
+
+        <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyA6sW4dqXcugpnpNHkZyrHPyfwRWTU9fKc",
+                authDomain: "fitnessplus-5d8b8.firebaseapp.com",
+                databaseURL: "https://fitnessplus-5d8b8.firebaseio.com",
+                projectId: "fitnessplus-5d8b8",
+                storageBucket: "fitnessplus-5d8b8.appspot.com",
+                messagingSenderId: "950998040753"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script src="Scripts/logIn.js"></script>
+
+
+
         <!-- Header content, separate from site.master -->
         <nav class="navbar navbar-default" style="background-color: #afabab">
             <div class="container-fluid">
@@ -75,7 +94,7 @@
 
                     <label for="frmPass" style="color: #66ccff; padding-top: 25px;">
                         Password 
-                        <input type="password" class="form-control" id="frmPass" aria-describedby="passwordHelp" placeholder="Password"  />
+                        <input type="password" class="form-control" id="frmPass" aria-describedby="passwordHelp" placeholder="Password" />
                     </label>
 
                 </div>
@@ -88,8 +107,6 @@
                 <div class="col-sm-4">
                 </div>
                 <div class="col-sm-4">
-                    
-
                 </div>
                 <div class="col-sm-4">
                 </div>
@@ -116,7 +133,8 @@
 
             </div>
 
-        </div><!-- Container close -->    
+        </div>
+        <!-- Container close -->
     </form>
 </body>
 </html>

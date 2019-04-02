@@ -12,6 +12,7 @@ function calcMacros() {
 }
 
 
+
 //maintenance function
 function calcMaintenance() {
     var bw = document.getElementById("txtWeightInput").value;
