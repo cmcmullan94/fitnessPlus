@@ -39,21 +39,13 @@
 
 
         <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
-        <script>
-            // Initialize Firebase
-            var config = {
-                apiKey: "AIzaSyA6sW4dqXcugpnpNHkZyrHPyfwRWTU9fKc",
-                authDomain: "fitnessplus-5d8b8.firebaseapp.com",
-                databaseURL: "https://fitnessplus-5d8b8.firebaseio.com",
-                projectId: "fitnessplus-5d8b8",
-                storageBucket: "fitnessplus-5d8b8.appspot.com",
-                messagingSenderId: "950998040753"
-            };
-            firebase.initializeApp(config);
-        </script>
-        <script src="Scripts/logIn.js"></script>
 
 
+        <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+        <script src="Scripts/myScripts/firebase.js"></script>
+        <script src="Scripts/myScripts/login.js"></script>
 
         <!-- Header content, separate from site.master -->
         <nav class="navbar navbar-default" style="background-color: #afabab">
@@ -65,8 +57,8 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="Register.aspx"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
-                        <li><a href="logIn.aspx"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                        <!-- <li><a href="Register.aspx"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li> -->
+                        <li><a onclick="logOut()"><span class="glyphicon glyphicon-log-in"></span>LogOut</a></li>
                     </ul>
                 </div>
             </div>
@@ -75,11 +67,14 @@
         <!-- Main body content here 
             "info-line = allows for vertical stacking "-->
 
+        <div id="firebaseui-auth-container"></div>
+        <div id="loader">Loading...</div>
+
         <div class="container text-center">
 
             <!--Top Half -->
 
-            <div class="row">
+            <!--  <div class="row">
                 <div class="col-sm-4">
                 </div>
 
@@ -114,7 +109,7 @@
 
             <!-- Bottom Half-->
 
-            <div class="row">
+            <!--   <div class="row">
                 <div class="col-sm-4">
                 </div>
 
@@ -131,7 +126,7 @@
                 <div class="col-sm-4">
                 </div>
 
-            </div>
+            </div> -->
 
         </div>
         <!-- Container close -->

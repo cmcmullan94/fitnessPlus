@@ -22,7 +22,7 @@
     </style>
 
 
-    <script src="Scripts/macroCalculator.js"></script>
+    <script src="Scripts/myScripts/macroCalculator.js"></script>
 
     <div class="container text-center" >   
     <!-- top half -->

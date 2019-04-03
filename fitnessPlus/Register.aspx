@@ -186,7 +186,7 @@
                 </div>
 
                 <div class="col-sm-4" style="padding-top: 50px">
-                    <input type="button" id="btnRegister" value="Register!" name="register" class="btn btn-info" style="background-color: #66CCFF" onclick="test()" />
+                    <input type="button" id="btnRegister" value="Register!" name="register" class="btn btn-info" style="background-color: #66CCFF" onclick="register" />
                 </div>
 
                 <div class="col-sm-4">
