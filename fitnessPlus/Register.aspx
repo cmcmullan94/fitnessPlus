@@ -13,6 +13,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+
+
+    <script src="Scripts/myScripts/register.js"></script>
+
 
     <script type="text/javascript">
         $(function () {
@@ -31,20 +36,6 @@
             font-size: large;
         }
     </style>
-
-    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
-        <script>
-            // Initialize Firebase
-            var config = {
-                apiKey: "AIzaSyA6sW4dqXcugpnpNHkZyrHPyfwRWTU9fKc",
-                authDomain: "fitnessplus-5d8b8.firebaseapp.com",
-                databaseURL: "https://fitnessplus-5d8b8.firebaseio.com",
-                projectId: "fitnessplus-5d8b8",
-                storageBucket: "fitnessplus-5d8b8.appspot.com",
-                messagingSenderId: "950998040753"
-            };
-            firebase.initializeApp(config);
-        </script>
 
 </head>
 <body>
@@ -195,7 +186,7 @@
                 </div>
 
                 <div class="col-sm-4" style="padding-top: 50px">
-                    <input type="button" id="btnRegister" value="Register!" name="register" class="btn btn-info" style="background-color: #66CCFF" runat="server" onclick="btnRegister_Click"/>
+                    <input type="button" id="btnRegister" value="Register!" name="register" class="btn btn-info" style="background-color: #66CCFF" onclick="test()" />
                 </div>
 
                 <div class="col-sm-4">
@@ -205,6 +196,7 @@
 
         </div>
         <!-- Container close -->
+
     </form>
 </body>
 </html>
