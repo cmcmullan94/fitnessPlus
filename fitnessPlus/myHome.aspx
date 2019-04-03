@@ -13,7 +13,7 @@
 
 
     
-    <button onclick="logOut()">Log Out</button>
+    <!--<button onclick="logOut()">Log Out</button> -->
 
 
 

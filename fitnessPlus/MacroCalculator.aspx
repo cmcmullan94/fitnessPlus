@@ -21,7 +21,8 @@
         }
     </style>
 
-
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script src="Scripts/myScripts/firebase.js"></script>
     <script src="Scripts/myScripts/macroCalculator.js"></script>
 
     <div class="container text-center" >   
@@ -144,7 +145,7 @@
 
              <div class="col-sm-4">
                  <div class="info-line", "align-content-center" style="padding-top: 50px">
-                    <input type="button" id="btnSave" value="Save!" class="btn btn-info" Style="background-color: #66ccff" OnClick="saveButtonClick()" />
+                    <input type="button" id="btnSave" value="Save!" class="btn btn-info" Style="background-color: #66ccff" onclick="submit()"/>
                  </div>
              </div>
 

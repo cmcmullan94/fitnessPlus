@@ -41,7 +41,6 @@ function calcMaintenance() {
         return maintenance;
     }
 
-    console.log("MaintRes A after if = " + maintResA);
     console.log("Specific = " + specific);
 
    // maintenance = +bw + +maintResA;                                           //adding lower limit to bw to get maintenance (+ before variables converts to int)
@@ -93,8 +92,8 @@ function calcCarbs() {
 
     var proteinCal, fatCal, totalFP, carbsCal, carbsGrams;
 
-    proteinCal = bw * 4         //converting protein in grams (bw) to protein calories
-    fatCal = fatGrams * 9                            //convert fat in grams to calories
+    proteinCal = bw * 4                                                     //converting protein in grams (bw) to protein calories
+    fatCal = fatGrams * 9                                                   //convert fat in grams to calories
 
 
     //carbs
@@ -111,4 +110,18 @@ function calcCarbs() {
     return this.carbsGrams;
 
 }
+
+
+    var firebase = app_firebase.database();
+    var ref = firebase.ref('macros');
+
+var data = {
+    maintenance: maintenance,
+    protein: 10,
+    fat: fatGrams,
+    carbs: carbsGrams
+
+    }
+
+    ref.push(data);
 
