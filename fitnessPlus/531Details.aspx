@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <!--Css here -->
     <style>
-        #cssTable td {
+        #cssTable td, th {
             text-align: center;
             vertical-align: middle;
         }
@@ -31,7 +31,55 @@
 
     <!-- <iframe width="100%" height="100%"  frameborder="0" scrolling="no" src="https://ulster-my.sharepoint.com/personal/mcmullan-c23_ulster_ac_uk/_layouts/15/Doc.aspx?sourcedoc={2dcf7620-bae5-42a4-83a2-2d7dcb10ae52}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe> -->
 
-    <table class="table table-sm" id="cssTable">
+    <div class="container text-center">
+
+        <div class="row"> <!-- Row 1 -->
+            <div class="col-sm-4">
+                <label for="txtSquatInput" style="color: #66ccff">
+                    Squat
+                        <br />
+                    <input type="text" class="form-control" placeholder="100" id="txtSquatInput" />
+                </label>
+            </div>
+
+            <div class="col-sm-4">
+                <label for="txtDeadliftInput" style="color: #66ccff">
+                    Deadlift
+                        <br />
+                    <input type="text" class="form-control" placeholder="100" id="txtDeadliftInput" />
+                </label>
+            </div>
+
+            <div class="col-sm-4" style="padding-top: 70px;">
+                <input type="button" id="btnSubmitAllMax" value="GO!" class="btn btn-info" style="background-color: #66CCFF" onclick="#" />
+
+            </div>
+
+        </div> <!-- end row 1 -->
+
+
+        <div class="row" style="padding-bottom: 50px;"> <!-- Row 2 -->
+            <div class="col-sm-4">
+                <label for="txtBenchInput" style="color: #66ccff">
+                    Bench
+                        <br />
+                    <input type="text" class="form-control" placeholder="100" id="txtBenchInput" />
+                </label>
+            </div>
+            <div class="col-sm-4">
+                <label for="txtOHPInput" style="color: #66ccff">
+                    OHP
+                        <br />
+                    <input type="text" class="form-control" placeholder="100" id="txtOHPInput" />
+                </label>
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div> <!-- Row 2 --> 
+
+    </div> <!-- Container close -->
+
+    <table class="table table-hover" id="cssTable">
         <thead>
             <tr>
                 <th scope="col"></th>
@@ -72,7 +120,8 @@
             </tr>
         </thead>
         <tbody>
-            <tr> <!-- Week 1 -->
+            <tr>
+                <!-- Week 1 -->
                 <!--Squat -->
                 <th scope="row"></th>
                 <td>1 - 65%</td>
@@ -96,7 +145,7 @@
             </tr>
             <tr>
                 <!--Squat -->
-                <th scope="row">Week 1</th>
+                <th scope="row" class="bg-primary">Week 1</th>
                 <td>2 - 75%</td>
                 <td>5</td>
                 <td>#</td>
@@ -116,7 +165,7 @@
                 <td>5</td>
                 <td>#</td>
             </tr>
-            <tr> 
+            <tr style="border-bottom: solid">
                 <!--Squat -->
                 <th scope="row"></th>
                 <td>3 - 80%</td>
@@ -138,34 +187,34 @@
                 <td>5</td>
                 <td>#</td>
             </tr>
-<!-- -------------------------------------------------------------------------------- -->
+            <!-- -------------------------------------------------------------------------------- -->
             <!-- Week 2 -->
 
-            <tr> 
-                <!--Squat -->
-                <th scope="row"></th>
-                <td>1 - 70%</td>
-                <td>3</td>
-                <td>#</td>
-                <td></td>
-                <!--Deadlift -->
-                <td>1 - 70%</td>
-                <td>3</td>
-                <td>#</td>
-                <td></td>
-                <!-- Bench -->
-                <td>1 - 70%</td>
-                <td>3</td>
-                <td>#</td>
-                <td></td>
-                <!-- OHP -->
-                <td>1 - 70%</td>
-                <td>3</td>
-                <td>#</td>
-            </tr>
             <tr>
+                <!--Squat -->
+                <th scope="row"></th>
+                <td>1 - 70%</td>
+                <td>3</td>
+                <td>#</td>
+                <td></td>
+                <!--Deadlift -->
+                <td>1 - 70%</td>
+                <td>3</td>
+                <td>#</td>
+                <td></td>
+                <!-- Bench -->
+                <td>1 - 70%</td>
+                <td>3</td>
+                <td>#</td>
+                <td></td>
+                <!-- OHP -->
+                <td>1 - 70%</td>
+                <td>3</td>
+                <td>#</td>
+            </tr>
+            <tr >
                 <!-- Squat -->
-                <th scope="row">Week 2</th>
+                <th scope="row" class="bg-success">Week 2</th>
                 <td>2 - 80%</td>
                 <td>3</td>
                 <td>#</td>
@@ -185,34 +234,34 @@
                 <td>3</td>
                 <td>#</td>
             </tr>
-            <tr> 
+            <tr style="border-bottom: solid">
                 <!--Squat -->
                 <th scope="row"></th>
-                <td>3 - 90%</td>
+                <td>3 - 85%</td>
                 <td>3</td>
                 <td>#</td>
                 <td></td>
                 <!--Deadlift -->
-                <td>3 - 90%</td>
+                <td>3 - 85%</td>
                 <td>3</td>
                 <td>#</td>
                 <td></td>
                 <!-- Bench -->
-                <td>3 - 90%</td>
+                <td>3 - 85%</td>
                 <td>3</td>
                 <td>#</td>
                 <td></td>
                 <!-- OHP -->
-                <td>3 - 90%</td>
+                <td>3 - 85%</td>
                 <td>3</td>
                 <td>#</td>
             </tr>
 
-<!------------------------------------------------------------------------------->
+            <!------------------------------------------------------------------------------->
 
             <!-- Week 3 -->
 
-            <tr> 
+            <tr >
                 <!--Squat -->
                 <th scope="row"></th>
                 <td>1 - 75%</td>
@@ -236,7 +285,7 @@
             </tr>
             <tr>
                 <!-- Squat -->
-                <th scope="row">Week 3</th>
+                <th scope="row" class="bg-danger">Week 3</th>
                 <td>2 - 85%</td>
                 <td>3</td>
                 <td>#</td>
@@ -256,7 +305,7 @@
                 <td>3</td>
                 <td>#</td>
             </tr>
-            <tr> 
+            <tr style="border-bottom: solid">
                 <!--Squat -->
                 <th scope="row"></th>
                 <td>3 - 90%</td>
@@ -278,7 +327,7 @@
                 <td>1</td>
                 <td>#</td>
             </tr>
-<!-- -------------------------------------------------------------->
+            <!-- -------------------------------------------------------------->
 
             <!-- Week 4 -->
             <tr>
@@ -303,9 +352,9 @@
                 <td>8</td>
                 <td>#</td>
             </tr>
-            <tr> 
+            <tr>
                 <!--Squat -->
-                <th scope="row">Week 4</th>
+                <th scope="row" class="bg-info">Week 4</th>
                 <td>2 - 50%</td>
                 <td>8</td>
                 <td>#</td>
@@ -325,7 +374,7 @@
                 <td>8</td>
                 <td>#</td>
             </tr>
-            <tr> 
+            <tr>
                 <!--Squat -->
                 <th scope="row"></th>
                 <td>3 - 60%</td>
