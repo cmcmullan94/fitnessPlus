@@ -49,6 +49,7 @@
                 <th scope="col"></th>
                 <th scope="col"></th>
                 <th scope="col">Row</th>
+                <th scope="col"></th>
             </tr>
             <tr>
                 <!-- Squat Values -->
@@ -71,45 +72,280 @@
             </tr>
         </thead>
         <tbody>
+            <tr> <!-- Week 1 -->
+                <!--Squat -->
+                <th scope="row"></th>
+                <td>1 - 65%</td>
+                <td>5</td>
+                <td>#</td>
+                <td></td>
+                <!--Deadlift -->
+                <td>1 - 65%</td>
+                <td>5</td>
+                <td>#</td>
+                <td></td>
+                <!-- Bench -->
+                <td>1 - 65%</td>
+                <td>5</td>
+                <td>#</td>
+                <td></td>
+                <!-- OHP -->
+                <td>1 - 65%</td>
+                <td>5</td>
+                <td>#</td>
+            </tr>
             <tr>
                 <!--Squat -->
                 <th scope="row">Week 1</th>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
+                <td>2 - 75%</td>
+                <td>5</td>
+                <td>#</td>
                 <td></td>
                 <!--Deadlift -->
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
+                <td>2 - 75%</td>
+                <td>5</td>
+                <td>#</td>
                 <td></td>
                 <!-- Bench -->
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
+                <td>2 - 75%</td>
+                <td>5</td>
+                <td>#</td>
                 <td></td>
                 <!-- OHP -->
-                <td>1</td>
-                <td>2</td>
+                <td>2 - 75%</td>
+                <td>5</td>
+                <td>#</td>
+            </tr>
+            <tr> 
+                <!--Squat -->
+                <th scope="row"></th>
+                <td>3 - 80%</td>
+                <td>5</td>
+                <td>#</td>
+                <td></td>
+                <!--Deadlift -->
+                <td>3 - 80%</td>
+                <td>5</td>
+                <td>#</td>
+                <td></td>
+                <!-- Bench -->
+                <td>3 - 80%</td>
+                <td>5</td>
+                <td>#</td>
+                <td></td>
+                <!-- OHP -->
+                <td>3 - 80%</td>
+                <td>5</td>
+                <td>#</td>
+            </tr>
+<!-- -------------------------------------------------------------------------------- -->
+            <!-- Week 2 -->
+
+            <tr> 
+                <!--Squat -->
+                <th scope="row"></th>
+                <td>1 - 70%</td>
                 <td>3</td>
+                <td>#</td>
+                <td></td>
+                <!--Deadlift -->
+                <td>1 - 70%</td>
+                <td>3</td>
+                <td>#</td>
+                <td></td>
+                <!-- Bench -->
+                <td>1 - 70%</td>
+                <td>3</td>
+                <td>#</td>
+                <td></td>
+                <!-- OHP -->
+                <td>1 - 70%</td>
+                <td>3</td>
+                <td>#</td>
             </tr>
             <tr>
+                <!-- Squat -->
                 <th scope="row">Week 2</th>
-                <td>1</td>
-                <td>2</td>
+                <td>2 - 80%</td>
                 <td>3</td>
+                <td>#</td>
+                <td></td>
+                <!--Deadlift -->
+                <td>2 - 80%</td>
+                <td>3</td>
+                <td>#</td>
+                <td></td>
+                <!-- Bench -->
+                <td>2 - 80%</td>
+                <td>3</td>
+                <td>#</td>
+                <td></td>
+                <!-- OHP -->
+                <td>2 - 80%</td>
+                <td>3</td>
+                <td>#</td>
+            </tr>
+            <tr> 
+                <!--Squat -->
+                <th scope="row"></th>
+                <td>3 - 90%</td>
+                <td>3</td>
+                <td>#</td>
+                <td></td>
+                <!--Deadlift -->
+                <td>3 - 90%</td>
+                <td>3</td>
+                <td>#</td>
+                <td></td>
+                <!-- Bench -->
+                <td>3 - 90%</td>
+                <td>3</td>
+                <td>#</td>
+                <td></td>
+                <!-- OHP -->
+                <td>3 - 90%</td>
+                <td>3</td>
+                <td>#</td>
+            </tr>
+
+<!------------------------------------------------------------------------------->
+
+            <!-- Week 3 -->
+
+            <tr> 
+                <!--Squat -->
+                <th scope="row"></th>
+                <td>1 - 75%</td>
+                <td>5</td>
+                <td>#</td>
+                <td></td>
+                <!--Deadlift -->
+                <td>1 - 75%</td>
+                <td>5</td>
+                <td>#</td>
+                <td></td>
+                <!-- Bench -->
+                <td>1 - 75%</td>
+                <td>5</td>
+                <td>#</td>
+                <td></td>
+                <!-- OHP -->
+                <td>1 - 75%</td>
+                <td>5</td>
+                <td>#</td>
             </tr>
             <tr>
+                <!-- Squat -->
                 <th scope="row">Week 3</th>
-                <td>1</td>
-                <td>2</td>
+                <td>2 - 85%</td>
                 <td>3</td>
+                <td>#</td>
+                <td></td>
+                <!--Deadlift -->
+                <td>2 - 85%</td>
+                <td>3</td>
+                <td>#</td>
+                <td></td>
+                <!-- Bench -->
+                <td>2 - 85%</td>
+                <td>3</td>
+                <td>#</td>
+                <td></td>
+                <!-- OHP -->
+                <td>2 - 85%</td>
+                <td>3</td>
+                <td>#</td>
             </tr>
-            <tr>
-                <th scope="row">Week 4</th>
+            <tr> 
+                <!--Squat -->
+                <th scope="row"></th>
+                <td>3 - 90%</td>
                 <td>1</td>
-                <td>2</td>
-                <td>3</td>
+                <td>#</td>
+                <td></td>
+                <!--Deadlift -->
+                <td>3 - 90%</td>
+                <td>1</td>
+                <td>#</td>
+                <td></td>
+                <!-- Bench -->
+                <td>3 - 90%</td>
+                <td>1</td>
+                <td>#</td>
+                <td></td>
+                <!-- OHP -->
+                <td>3 - 90%</td>
+                <td>1</td>
+                <td>#</td>
+            </tr>
+<!-- -------------------------------------------------------------->
+
+            <!-- Week 4 -->
+            <tr>
+                <!-- Squat -->
+                <th scope="row"></th>
+                <td>1 - 40%</td>
+                <td>8</td>
+                <td>#</td>
+                <td></td>
+                <!--Deadlift -->
+                <td>1 - 40%</td>
+                <td>8</td>
+                <td>#</td>
+                <td></td>
+                <!-- Bench -->
+                <td>1 - 40%</td>
+                <td>8</td>
+                <td>#</td>
+                <td></td>
+                <!-- OHP -->
+                <td>1 - 40%</td>
+                <td>8</td>
+                <td>#</td>
+            </tr>
+            <tr> 
+                <!--Squat -->
+                <th scope="row">Week 4</th>
+                <td>2 - 50%</td>
+                <td>8</td>
+                <td>#</td>
+                <td></td>
+                <!--Deadlift -->
+                <td>2 - 50%</td>
+                <td>8</td>
+                <td>#</td>
+                <td></td>
+                <!-- Bench -->
+                <td>2 - 50%</td>
+                <td>8</td>
+                <td>#</td>
+                <td></td>
+                <!-- OHP -->
+                <td>2 - 50%</td>
+                <td>8</td>
+                <td>#</td>
+            </tr>
+            <tr> 
+                <!--Squat -->
+                <th scope="row"></th>
+                <td>3 - 60%</td>
+                <td>8</td>
+                <td>#</td>
+                <td></td>
+                <!--Deadlift -->
+                <td>3 - 60%</td>
+                <td>8</td>
+                <td>#</td>
+                <td></td>
+                <!-- Bench -->
+                <td>3 - 60%</td>
+                <td>8</td>
+                <td>#</td>
+                <td></td>
+                <!-- OHP -->
+                <td>3 - 60%</td>
+                <td>8</td>
+                <td>#</td>
             </tr>
         </tbody>
     </table>
