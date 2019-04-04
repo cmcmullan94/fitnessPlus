@@ -4,7 +4,11 @@
     <!--Css here -->
     <style></style>
 
+
     <!--Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script src="Scripts/myScripts/firebase.js"></script>
+    <script src="Scripts/myScripts/myPlan.js"></script>
 
     <!--HTML-->
 
@@ -94,7 +98,7 @@
                         <img src="Images/intermediateIcon2.png" />
                         <br />
                         <br />
-                        <input type="button" id="btnViewStrength2" value="View" class="btn btn-info" style="background-color: #66CCFF" onclick="#" />
+                        <input type="button" id="btnViewStrength2" value="View" class="btn btn-info" style="background-color: #66CCFF" onclick="window.location = 'strengthTwo.aspx'" />
                     </label>
                 </div>
             </div>
