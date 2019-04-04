@@ -2,7 +2,13 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <!--Css here -->
-    <style></style>
+    <style>
+        #cssTable td {
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+
 
 
     <!--Scripts -->
@@ -25,7 +31,7 @@
 
     <!-- <iframe width="100%" height="100%"  frameborder="0" scrolling="no" src="https://ulster-my.sharepoint.com/personal/mcmullan-c23_ulster_ac_uk/_layouts/15/Doc.aspx?sourcedoc={2dcf7620-bae5-42a4-83a2-2d7dcb10ae52}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe> -->
 
-    <table class="table table-sm">
+    <table class="table table-sm" id="cssTable">
         <thead>
             <tr>
                 <th scope="col"></th>
@@ -35,13 +41,21 @@
                 <th scope="col"></th>
                 <th scope="col"></th>
                 <th scope="col">Deadlift</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col">Bench</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col">Row</th>
             </tr>
             <tr>
+                <!-- Squat Values -->
                 <th scope="col"></th>
                 <th scope="col">Sets</th>
                 <th scope="col">Reps</th>
                 <th scope="col">Base Number</th>
-
                 <th scope="col"></th>
                 <th scope="col">Sets</th>
                 <th scope="col">Reps</th>
@@ -57,9 +71,24 @@
             </tr>
         </thead>
         <tbody>
-
             <tr>
+                <!--Squat -->
                 <th scope="row">Week 1</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td></td>
+                <!--Deadlift -->
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td></td>
+                <!-- Bench -->
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td></td>
+                <!-- OHP -->
                 <td>1</td>
                 <td>2</td>
                 <td>3</td>
