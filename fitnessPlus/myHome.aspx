@@ -11,7 +11,7 @@
     <div class="container text-center">
         <!-- Row 1 -->
         <div class="row">
-            <div class="col">
+            <div class="col-sm-4">
                 <div style="border-style: solid; border-width: medium; border-color: inherit; color: #66ccff">
                     <label>My Macros</label>
                     <br />
@@ -31,7 +31,7 @@
                     </label>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-sm-4">
                 <div style="border-style: solid; border-width: medium; border-color: inherit; color: #66ccff">
                     <label>Days to next check in...</label>
                     <br />
@@ -45,7 +45,7 @@
                 </div>
 
             </div>
-            <div class="col">
+            <div class="col-sm-4">
                 <div style="border-style: solid; border-width: medium; border-color: inherit; color: #66ccff">
                     <label>Rewards Earned</label>
                     <br />

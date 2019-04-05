@@ -18,8 +18,19 @@
         console.log("Log Out");
     }
 
-if (app_firebase.onAuthStateChanged().currentUser !== null)
-    console.log("user id: " + app_firebase.auth.currentUser.uid);
+function test() {
+
+}
+
+//Add a realtime listener
+firebase.auth().onAuthStateChanged(firebaseUser => {
+    if (firebaseUser) {
+        console.log(firebaseUser);
+    } else {
+        console.log('not logged in');
+    }
+});
+   
 
     //mainApp.logOut = logOut;
 //})()
