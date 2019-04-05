@@ -1,6 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="strengthTwo.aspx.cs" Inherits="fitnessPlus.strengthTwo" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script src="Scripts/myScripts/firebase.js"></script>
+
+
     <div class="container text-center">
         <!-- Row 1 -->
         <div class="row" style="padding-bottom: 50px;">

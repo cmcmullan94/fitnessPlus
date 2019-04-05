@@ -12,7 +12,6 @@ function calcMacros() {
 }
 
 
-
 //maintenance function
 function calcMaintenance() {
     var bw = document.getElementById("txtWeightInput").value;
@@ -40,12 +39,7 @@ function calcMaintenance() {
         document.getElementById("lblMaintReturn").innerHTML = maintenance;        //updating label element
         return maintenance;
     }
-
-    console.log("Specific = " + specific);
-
-   // maintenance = +bw + +maintResA;                                           //adding lower limit to bw to get maintenance (+ before variables converts to int)
-
-   //document.getElementById("lblMaintReturn").innerHTML = maintenance;        //updating label element 
+ 
 
     return maintenance;                                                       //result
 }
@@ -111,17 +105,19 @@ function calcCarbs() {
 
 }
 
+function submit() {
+    var firebase = app_firebase.database();     //database reference
+    var ref = firebase.ref('macros');           //referencing node
 
-    var firebase = app_firebase.database();
-    var ref = firebase.ref('macros');
 
-var data = {
-    maintenance: maintenance,
-    protein: 10,
-    fat: fatGrams,
-    carbs: carbsGrams
+    var bw = document.getElementById("txtWeightInput").value;
+
+    var data = {                                    //data being added
+        protein: bw,
 
     }
 
     ref.push(data);
+
+}
 

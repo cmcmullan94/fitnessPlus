@@ -145,7 +145,7 @@
 
              <div class="col-sm-4">
                  <div class="info-line", "align-content-center" style="padding-top: 50px">
-                    <input type="button" id="btnSave" value="Save!" class="btn btn-info" Style="background-color: #66ccff" onclick="submit()"/>
+                    <input type="button" id="btnSave" value="Save!" class="btn btn-info" Style="background-color: #66ccff" onclick="submit()" />                      
                  </div>
              </div>
 

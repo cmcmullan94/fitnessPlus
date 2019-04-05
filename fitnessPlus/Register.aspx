@@ -14,8 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
-
-
+    <script src="Scripts/myScripts/firebase.js"></script>
     <script src="Scripts/myScripts/register.js"></script>
 
 

@@ -18,5 +18,8 @@
         console.log("Log Out");
     }
 
-    mainApp.logOut = logOut;
+if (app_firebase.onAuthStateChanged().currentUser !== null)
+    console.log("user id: " + app_firebase.auth.currentUser.uid);
+
+    //mainApp.logOut = logOut;
 //})()
