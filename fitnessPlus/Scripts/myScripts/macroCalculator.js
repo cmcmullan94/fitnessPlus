@@ -105,19 +105,21 @@ function calcCarbs() {
 
 }
 
-function submit() {
+
+const btnSave = document.getElementById("btnSave");
+
+btnSave.addEventListener('click', e => {
+    alert("Hello");
+
+})
+
     var firebase = app_firebase.database();     //database reference
     var ref = firebase.ref('macros');           //referencing node
 
-
-    var bw = document.getElementById("txtWeightInput").value;
-
     var data = {                                    //data being added
-        protein: bw,
+        protein: 10,
 
     }
 
     ref.push(data);
-
-}
 
