@@ -1,36 +1,35 @@
 ﻿//var mainApp = {};
 
 //(function ()){
-    var firebase = app_firebase;
-    var uid = null;
-    firebase.auth().onAuthStateChanged(function (user) {
-        if (user) {
-            // User is signed in.
-            uid = user.uid;
-        } else {
-            uid = null;
-            window.location.replace("login.aspx");
-        }
-    });
-
-    function logOut() {
-        firebase.auth().signOut();
-        console.log("Log Out");
+var firebase = app_firebase;
+var uid = null;
+firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+        // User is signed in.
+        uid = user.uid;
+    } else {
+        uid = null;
+        window.location.replace("login.aspx");
     }
+});
+
+function logOut() {
+    firebase.auth().signOut();
+    console.log("Log Out");
+}
 
 function test() {
 
-}
+    var user = firebase.auth().currentUser;
 
-//Add a realtime listener
-firebase.auth().onAuthStateChanged(firebaseUser => {
-    if (firebaseUser) {
-        console.log(firebaseUser);
+    if (user) {
+        // User is signed in.
+        console.log(uid);
     } else {
-        console.log('not logged in');
+        // No user is signed in.
+        console.log("Cannot get UID");
     }
-});
-   
+}
 
     //mainApp.logOut = logOut;
 //})()

@@ -15,18 +15,8 @@
 
     <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
     <script src="Scripts/myScripts/firebase.js"></script>
-    <script src="Scripts/myScripts/register.js"></script>
+    <script src="Scripts/myScripts/Register.js"></script>
 
-
-    <script type="text/javascript">
-        $(function () {
-            $(function () {
-                $('#datetimepicker1').datetimepicker();
-
-            });
-        });
-
-    </script>
 
     <style type="text/css">
         .button {
@@ -56,9 +46,8 @@
             </div>
         </nav>
 
-        <!-- Main body content here 
-            "info-line = allows for vertical stacking "-->
 
+        <!-- Content Here -->
         <div class="container text-center">
 
             <!--Row 1 -->
@@ -66,128 +55,23 @@
             <div class="row" style="padding-bottom: 20px;">
                 <div class="col-sm-4">
                 </div>
-
                 <div class="col-sm-4">
-
                     <label for="txtUsernameInput" style="color: #66ccff">
                         Username
                         <br />
+                        <br />
                         <input type="text" class="form-control" placeholder="Username" id="txtUsernameInput" aria-describedby="Username" style="width: 200px" />
                     </label>
-
-
-                </div>
-
-                <div class="col-sm-4">
-                </div>
-
-            </div>
-            <!--Row 2 -->
-            <div class="row" style="padding-bottom: 20px;">
-                <div class="col-sm-4">
-                </div>
-                <div class="col-sm-4">
-                    <label for="txtEmailInput" style="color: #66ccff">
-                        Email
-                        <br />
-                        <input type="email" class="form-control" placeholder="example@hotmail.co.uk" id="txtEmailInput" aria-describedby="Email" style="width: 200px" />
-                    </label>
-
                 </div>
                 <div class="col-sm-4">
                 </div>
             </div>
-
-            <!--Row 3 -->
             <div class="row">
                 <div class="col-sm-4">
                 </div>
-
                 <div class="col-sm-4">
-
-                    <label for="txtForenameInput" style="color: #66ccff">
-                        Forename
-                        <br />
-                        <input type="text" class="form-control" placeholder="Joe" id="txtForenameInput" aria-describedby="forname" style="width: 150px" />
-                    </label>
-                    <label for="txtSurnameInput" style="color: #66ccff">
-                        Surname
-                        <br />
-                        <input type="text" class="form-control" placeholder="Bloggs" id="txtSurnameInput" aria-describedby="surname" style="width: 150px" />
-                    </label>
-
+                    <input type="button" id="btnRegister" value="Register!" name="register" class="btn btn-info" style="background-color: #66CCFF" onclick="registerAccount()" />
                 </div>
-
-                <div class="col-sm-4">
-                </div>
-
-            </div>
-            <!--Row 4 -->
-            <div class="row">
-                <div class="col-sm-4">
-                </div>
-
-                <div class="col-sm-4" style="padding-top: 50px">
-
-                    <label for="txtDOB" style="color: #66ccff">
-                        D.O.B
-                    </label>
-                    <div class="form-group">
-                        <div class='input-group date' id='datetimepicker1'>
-                            <input type='text' class="form-control" />
-                            <span class="input-group-addon">
-                                <span class="glyphicon glyphicon-calendar"></span>
-                            </span>
-                        </div>
-                    </div>
-
-
-                    <label for="sex" style="color: #66ccff">
-                        Sex
-                    <select class="form-control" id="sex">
-                        <option>Male</option>
-                        <option>Female</option>
-                    </select>
-                    </label>
-                </div>
-
-                <div class="col-sm-4">
-                </div>
-
-            </div>
-            <!--Row 5 -->
-            <div class="row">
-                <div class="col-sm-4">
-                </div>
-
-                <div class="col-sm-4">
-
-                    <label for="txtPassword" style="color: #66ccff; padding-top: 50px;">
-                        Password 
-                        <br />
-                        <input type="password" class="form-control" id="txtPassword" aria-describedby="password" placeholder="Password" style="width: 150px" />
-                    </label>
-                    <label for="txtPasswordConfirm" style="color: #66ccff; padding-top: 50px;">
-                        Confirm Password 
-                        <br />
-                        <input type="password" class="form-control" id="txtPasswordConfirm" aria-describedby="password confirm" placeholder="Confirm" style="width: 150px" />
-                    </label>
-
-                </div>
-
-                <div class="col-sm-4">
-                </div>
-
-            </div>
-            <!--Row 6 -->
-            <div class="row">
-                <div class="col-sm-4">
-                </div>
-
-                <div class="col-sm-4" style="padding-top: 50px">
-                    <input type="button" id="btnRegister" value="Register!" name="register" class="btn btn-info" style="background-color: #66CCFF" onclick="register" />
-                </div>
-
                 <div class="col-sm-4">
                 </div>
 

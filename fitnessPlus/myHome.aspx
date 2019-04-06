@@ -6,7 +6,6 @@
     <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
     <script src="Scripts/myScripts/firebase.js"></script>
     <script src="Scripts/myScripts/myHome.js"></script>
-    
 
     <div class="container text-center">
         <!-- Row 1 -->
@@ -40,7 +39,7 @@
                             count down timer from check in -->
                         Check in count down timer here
 
-                        <input type="button" id="btnCheckIn" value="View" class="btn btn-info" style="background-color: #66CCFF" onclick="#" />
+                        <input type="button" id="btnCheckIn" value="View" class="btn btn-info" style="background-color: #66CCFF" onclick="test()" />
                     </label>
                 </div>
 

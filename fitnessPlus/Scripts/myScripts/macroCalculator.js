@@ -84,7 +84,7 @@ console.log("Fat Grams = " + fatGrams);
 function calcCarbs() {
     var bw = document.getElementById("txtWeightInput").value;
 
-    var proteinCal, fatCal, totalFP, carbsCal, carbsGrams;
+    var proteinCal, fatCal, totalFP, carbsCal;
 
     proteinCal = bw * 4                                                     //converting protein in grams (bw) to protein calories
     fatCal = fatGrams * 9                                                   //convert fat in grams to calories
@@ -101,25 +101,26 @@ function calcCarbs() {
     document.getElementById("lblCarbReturn").innerHTML = carbsGrams;
 
 
-    return this.carbsGrams;
+    return carbsGrams;
 
 }
 
 
-const btnSave = document.getElementById("btnSave");
-
-btnSave.addEventListener('click', e => {
-    alert("Hello");
-
-})
+function save() {
 
     var firebase = app_firebase.database();     //database reference
     var ref = firebase.ref('macros');           //referencing node
+    var bw = document.getElementById("txtWeightInput").value;
 
     var data = {                                    //data being added
-        protein: 10,
+        protein: bw,
+        maint: maintenance,
+        fatGrams: fatGrams,
+        carbsGrams: carbsGrams,
 
     }
 
     ref.push(data);
+    
+}
 
