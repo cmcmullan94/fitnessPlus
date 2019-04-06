@@ -193,6 +193,7 @@
     <Content Include="Scripts\myScripts\531Details.js" />
     <Content Include="Scripts\myScripts\macroCalculator.js" />
     <Content Include="Scripts\myScripts\firebase.js" />
+    <Content Include="Scripts\myScripts\masterLogOut.js" />
     <Content Include="Scripts\myScripts\myHome.js" />
     <Content Include="Scripts\myScripts\login.js" />
     <Content Include="Scripts\myScripts\myPlan.js" />

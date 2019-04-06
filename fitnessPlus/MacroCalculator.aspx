@@ -25,6 +25,8 @@
     <script src="Scripts/myScripts/firebase.js"></script>
     <script src="Scripts/myScripts/macroCalculator.js"></script>
 
+    <script src="Scripts/myScripts/masterLogOut.js"></script>
+
     <div class="container text-center" >   
     <!-- top half -->
      
