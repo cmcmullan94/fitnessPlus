@@ -1,16 +1,18 @@
 ﻿
 function registerAccount() {
     var firebase = app_firebase;
-    var firebaseRef = app_firebase.database();     //database reference
+    var firebaseRef = app_firebase.database();   //database reference
     var user = firebase.auth().currentUser;
-    var ref = firebaseRef.ref('User');           //referencing node
+
+    uid = user.uid;
+
+    var ref = firebaseRef.ref('User').child(uid);           //referencing node
     var userName = document.getElementById("txtUsernameInput").value;
 
     if (user) {
         // User is signed in.
-        uid = user.uid;
-        var data = {                                    //data being added
-            ID: uid,
+        
+        var data = {                             //data being added
             Username: userName,
         }
 

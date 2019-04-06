@@ -26,7 +26,7 @@
                         Carbs:
                         <br />
                         <br />
-                        <input type="button" id="btnUpdateMacros" value="View" class="btn btn-info" style="background-color: #66CCFF" onclick="#" />
+                        <input type="button" id="btnUpdateMacros" value="View" class="btn btn-info" style="background-color: #66CCFF" />
                     </label>
                 </div>
             </div>
@@ -54,6 +54,18 @@
                 </div>
             </div>
         </div>
+
+        <!-- Row 2 -->
+
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <!-- Pull info from db here  -->
+            </div>
+            <div class="col-sm-4"></div>
+            
+        </div>
+
     </div>
 
 

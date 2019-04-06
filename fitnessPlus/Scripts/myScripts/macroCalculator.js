@@ -107,12 +107,18 @@ function calcCarbs() {
 
 
 function save() {
+    var firebase = app_firebase;
+    var user = firebase.auth().currentUser;
 
-    var firebase = app_firebase.database();     //database reference
-    var ref = firebase.ref('macros');           //referencing node
+    uid = user.uid;
+
+    var firebaseRef = app_firebase.database();             //database reference
+
+    var ref = firebaseRef.ref('User').child(uid).child('macros');           //referencing node
+
     var bw = document.getElementById("txtWeightInput").value;
 
-    var data = {                                    //data being added
+    var data = {                                        //data being added
         protein: bw,
         maint: maintenance,
         fatGrams: fatGrams,
