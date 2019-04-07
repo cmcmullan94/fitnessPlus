@@ -1,11 +1,4 @@
-﻿//declaring variables
-var squatMax = 0;
-var deadMax = 0;
-var benchMax = 0;
-var ohpMax = 0;
-
-
-function calcAll() {
+﻿function calcAll() {
     //all functions 
     setSquat();
     setDeadlift();
@@ -204,6 +197,12 @@ function calcOHP() {
 
 console.log("OHP Max Val = " + ohpMax);
 
+
+var squatMax = document.getElementById("txtSquatInput").value;
+var deadMax = document.getElementById("txtDeadliftInput").value;
+var benchMax = document.getElementById("txtDeadliftInput").value;
+var ohpMax = document.getElementById("txtOHPInput").value;
+
 function select() {
     var firebase = app_firebase;
     var user = firebase.auth().currentUser;
@@ -213,11 +212,6 @@ function select() {
     var firebaseRef = app_firebase.database();             //database reference
 
     var ref = firebaseRef.ref('User').child(uid).child('Plan');           //referencing node
-
-    var squatMax = document.getElementById("txtSquatInput").value;
-    var deadMax = document.getElementById("txtDeadliftInput").value;
-    var benchMax = document.getElementById("txtDeadliftInput").value;
-    var ohpMax = document.getElementById("txtOHPInput").value;
 
 
     var data = {                                        //data being added
