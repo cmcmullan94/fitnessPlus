@@ -1,4 +1,11 @@
-﻿function calcAll() {
+﻿//declaring variables
+var squatMax = 0;
+var deadMax = 0;
+var benchMax = 0;
+var ohpMax = 0;
+
+
+function calcAll() {
     //all functions 
     setSquat();
     setDeadlift();
@@ -54,9 +61,11 @@ function setSquat() {
 
 
 
-    return squatVal1;
+    return squatMax;
 
 }
+
+console.log("Squat Max Val = " + squatMax);
 
 function setDeadlift() {
     var deadMax = document.getElementById("txtDeadliftInput").value;
@@ -98,8 +107,10 @@ function setDeadlift() {
     document.getElementById("tdW4D2").innerHTML = deadVal11;
     document.getElementById("tdW4D3").innerHTML = deadVal12;
 
-    return deadVal1;
+    return deadMax;
 }
+
+console.log("Deadlift Max Val = " + deadMax);
 
 function setBench() {
     var benchMax = document.getElementById("txtDeadliftInput").value;
@@ -141,9 +152,11 @@ function setBench() {
     document.getElementById("tdW4B2").innerHTML = benchVal11;
     document.getElementById("tdW4B3").innerHTML = benchVal12;
 
-    return benchVal1;
+    return benchMax;
 
 }
+
+console.log("Bench Max Val = " + benchMax);
 
 function calcOHP() {
     var ohpMax = document.getElementById("txtOHPInput").value;
@@ -185,9 +198,45 @@ function calcOHP() {
     document.getElementById("tdW4O2").innerHTML = ohpVal11;
     document.getElementById("tdW4O3").innerHTML = ohpVal12;
 
-    return ohpVal1;
+    return ohpMax;
 
 }
+
+console.log("OHP Max Val = " + ohpMax);
+
+function select() {
+    var firebase = app_firebase;
+    var user = firebase.auth().currentUser;
+
+    uid = user.uid;
+
+    var firebaseRef = app_firebase.database();             //database reference
+
+    var ref = firebaseRef.ref('User').child(uid).child('Plan');           //referencing node
+
+    var squatMax = document.getElementById("txtSquatInput").value;
+    var deadMax = document.getElementById("txtDeadliftInput").value;
+    var benchMax = document.getElementById("txtDeadliftInput").value;
+    var ohpMax = document.getElementById("txtOHPInput").value;
+
+
+    var data = {                                        //data being added
+        ID: 001,
+        Name: "5/3/1 - Intermediate",
+        Squat: squatMax,
+        Deadlift: deadMax,
+        Bench: benchMax,
+        OHP: ohpMax,
+    }
+
+    ref.set(data);
+
+
+    window.location = '531Details.aspx';
+    console.log(data);
+    console.log("Select function");
+}
+
 
     
 

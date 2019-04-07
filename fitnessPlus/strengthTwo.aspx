@@ -3,8 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
     <script src="Scripts/myScripts/firebase.js"></script>
-    <script src="Scripts/myScripts/strengthTwo.js"></script>
-
 
     <div class="container text-center">
         <!-- Row 1 -->
@@ -31,7 +29,7 @@
                         <br />
                         <br />
                         <br />
-                        <input type="button" id="btnSelect" value="Select!" class="btn btn-info" style="background-color: #66CCFF" onclick="window.location='531Details.aspx'" />
+                        <input type="button" id="btnSelect" value="Select!" class="btn btn-info" style="background-color: #66CCFF" onclick="window.location = '531Details.aspx'" />
                     </label>
                 </div>
             </div>
