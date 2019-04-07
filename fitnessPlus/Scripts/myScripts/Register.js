@@ -23,7 +23,7 @@ function registerAccount() {
         console.log("Cannot get UID");
     }
 
-    ref.push(data);
+    ref.set(data);
 
 
 }

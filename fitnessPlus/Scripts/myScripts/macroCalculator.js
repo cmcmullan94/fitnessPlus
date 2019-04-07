@@ -126,7 +126,7 @@ function save() {
 
     }
 
-    ref.push(data);
+    ref.set(data);
     
 }
 
