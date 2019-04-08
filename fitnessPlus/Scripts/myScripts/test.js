@@ -6,6 +6,16 @@
     calcOHP();
 }
 
+var values = [0.4, //0
+    0.5, //1
+    0.6, //2
+    0.65, //3
+    0.7, //4
+    0.75, //5
+    0.8, //6
+    0.85, //7
+    0.9]; //8
+
 
 function setSquat() {
     var squatMax = document.getElementById("txtSquatInput").value;
@@ -49,10 +59,29 @@ function setSquat() {
     document.getElementById("tdW4S2").innerHTML = Math.round(squatVal11);
     document.getElementById("tdW4S3").innerHTML = Math.round(squatVal12);
 
-   
-    //inputting bench values 
 
-    //inputting OHP values
+
+
+    "results": [{
+        "targets": 4,
+        "render": {
+            "data": squatVal1,
+            "data": squatVal2,
+            "data": squatVal3,
+            "data": squatVal4,
+            "data": squatVal5,
+            "data": squatVal6,
+            "data": squatVal7,
+            "data": squatVal8,
+            "data": squatVal9,
+            "data": squatVal10,
+            "data": squatVal11,
+            "data": squatVal12,
+        }
+    }
+        
+
+    ]
 
 
 
@@ -235,7 +264,7 @@ function save() {
 }
 
 
-    
+
 
 
 

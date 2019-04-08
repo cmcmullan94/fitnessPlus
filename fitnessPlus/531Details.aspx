@@ -33,6 +33,7 @@
     <script src="Scripts/myScripts/firebase.js"></script>
     <script src="Scripts/myScripts/531Details.js"></script>
 
+
     <!-- Datatables links -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
@@ -48,7 +49,8 @@
     <script>
         $(document).ready(function () {
             $('#531Table').DataTable({
-                "stateSave": true,
+
+                
                 "paging": false,
                 "ordering": false,
                 "info": false,
@@ -60,7 +62,7 @@
                 ]
             });
         });
-    </script>
+    </script> 
 
     <!--HTML-->
 
