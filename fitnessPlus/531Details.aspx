@@ -97,7 +97,7 @@
             </div>
             <div class="col-sm-4">
                 <label for="btnSave" style="color: #66ccff">
-                    <input type="button" id="btnSave" value="Save!" class="btn btn-info" style="background-color: #66CCFF" onclick="select()" />
+                    <input type="button" id="btnSave" value="Save!" class="btn btn-info" style="background-color: #66CCFF" onclick="save()" />
                     <br />
                     <small id="saveHelp" class="form-text text-muted">Happy with these numbers? Save them here!</small>
                 </label>

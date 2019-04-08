@@ -56,9 +56,10 @@ function setSquat() {
 
     return squatMax;
 
-}
 
-console.log("Squat Max Val = " + squatMax);
+    console.log("Squat Max Val = " + squatMax);
+
+}
 
 function setDeadlift() {
     var deadMax = document.getElementById("txtDeadliftInput").value;
@@ -101,9 +102,10 @@ function setDeadlift() {
     document.getElementById("tdW4D3").innerHTML = deadVal12;
 
     return deadMax;
+
+    console.log("Deadlift Max Val = " + deadMax);
 }
 
-console.log("Deadlift Max Val = " + deadMax);
 
 function setBench() {
     var benchMax = document.getElementById("txtDeadliftInput").value;
@@ -147,9 +149,11 @@ function setBench() {
 
     return benchMax;
 
+    console.log("Bench Max Val = " + benchMax);
+
 }
 
-console.log("Bench Max Val = " + benchMax);
+
 
 function calcOHP() {
     var ohpMax = document.getElementById("txtOHPInput").value;
@@ -193,42 +197,39 @@ function calcOHP() {
 
     return ohpMax;
 
+    console.log("OHP Max Val = " + ohpMax);
+
 }
 
-console.log("OHP Max Val = " + ohpMax);
 
+function save() {
 
-var squatMax = document.getElementById("txtSquatInput").value;
-var deadMax = document.getElementById("txtDeadliftInput").value;
-var benchMax = document.getElementById("txtDeadliftInput").value;
-var ohpMax = document.getElementById("txtOHPInput").value;
-
-function select() {
     var firebase = app_firebase;
     var user = firebase.auth().currentUser;
 
     uid = user.uid;
 
-    var firebaseRef = app_firebase.database();             //database reference
+    var firebaseRef = app_firebase.database();                  //database reference
 
     var ref = firebaseRef.ref('User').child(uid).child('Plan');           //referencing node
 
+    var squatMax = document.getElementById("txtSquatInput").value;
+    var deadMax = document.getElementById("txtDeadliftInput").value;
+    var benchMax = document.getElementById("txtBenchInput").value;
+    var ohpMax = document.getElementById("txtOHPInput").value;
 
-    var data = {                                        //data being added
+    var data = {                                                //data being added
         ID: 001,
-        Name: "5/3/1 - Intermediate",
-        Squat: squatMax,
-        Deadlift: deadMax,
-        Bench: benchMax,
-        OHP: ohpMax,
+        Name: "5/3/1/ - Intermediate",
+        squatMax: squatMax,
+        deadMax: deadMax,
+        benchMax: benchMax,
+        ohpMax: ohpMax,
+
     }
 
     ref.set(data);
 
-
-    window.location = '531Details.aspx';
-    console.log(data);
-    console.log("Select function");
 }
 
 
