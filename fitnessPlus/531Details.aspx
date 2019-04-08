@@ -8,6 +8,7 @@
             vertical-align: middle;
         }
 
+
         .auto-style1 {
             height: 37px;
         }
@@ -27,13 +28,41 @@
 
 
     <!--Scripts -->
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script src="Scripts/myScripts/firebase.js"></script>
+    <script src="Scripts/myScripts/531Details.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>        <!-- Firebase -->
-    <script src="Scripts/myScripts/firebase.js"></script>                               <!-- Firebase -->
-    <script src="Scripts/myScripts/531Details.js"></script>                             <!-- Firebase -->
+    <!-- Datatables links -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.flash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.print.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#531Table').DataTable({
+                "stateSave": true,
+                "paging": false,
+                "ordering": false,
+                "info": false,
+                "bFilter": false,
+                dom: 'Bfrtip',
+                buttons: [
+                    'pdf',
+                    'excel',
+                ]
+            });
+        });
+    </script>
 
     <!--HTML-->
-
 
     <div class="container text-center">
 

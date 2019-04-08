@@ -34,18 +34,18 @@ function setSquat() {
 
 
     //Inputting squat values 
-    document.getElementById("tdW1S1").innerHTML = squatVal1;
-    document.getElementById("tdW1S2").innerHTML = squatVal2;
-    document.getElementById("tdW1S3").innerHTML = squatVal3;
-    document.getElementById("tdW2S1").innerHTML = squatVal4;
-    document.getElementById("tdW2S2").innerHTML = squatVal5;
-    document.getElementById("tdW2S3").innerHTML = squatVal6;
-    document.getElementById("tdW3S1").innerHTML = squatVal7;
-    document.getElementById("tdW3S2").innerHTML = squatVal8;
-    document.getElementById("tdW3S3").innerHTML = squatVal9;
-    document.getElementById("tdW4S1").innerHTML = squatVal10;
-    document.getElementById("tdW4S2").innerHTML = squatVal11;
-    document.getElementById("tdW4S3").innerHTML = squatVal12;
+    document.getElementById("tdW1S1").innerHTML = Math.round(squatVal1);
+    document.getElementById("tdW1S2").innerHTML = Math.round(squatVal2);
+    document.getElementById("tdW1S3").innerHTML = Math.round(squatVal3);
+    document.getElementById("tdW2S1").innerHTML = Math.round(squatVal4);
+    document.getElementById("tdW2S2").innerHTML = Math.round(squatVal5);
+    document.getElementById("tdW2S3").innerHTML = Math.round(squatVal6);
+    document.getElementById("tdW3S1").innerHTML = Math.round(squatVal7);
+    document.getElementById("tdW3S2").innerHTML = Math.round(squatVal8);
+    document.getElementById("tdW3S3").innerHTML = Math.round(squatVal9);
+    document.getElementById("tdW4S1").innerHTML = Math.round(squatVal10);
+    document.getElementById("tdW4S2").innerHTML = Math.round(squatVal11);
+    document.getElementById("tdW4S3").innerHTML = Math.round(squatVal12);
 
    
     //inputting bench values 
@@ -88,18 +88,18 @@ function setDeadlift() {
     var deadVal11 = values[1] * deadMax;
     var deadVal12 = values[2] * deadMax;
 
-    document.getElementById("tdW1D1").innerHTML = deadVal1;
-    document.getElementById("tdW1D2").innerHTML = deadVal2;
-    document.getElementById("tdW1D3").innerHTML = deadVal3;
-    document.getElementById("tdW2D1").innerHTML = deadVal4;
-    document.getElementById("tdW2D2").innerHTML = deadVal5;
-    document.getElementById("tdW2D3").innerHTML = deadVal6;
-    document.getElementById("tdW3D1").innerHTML = deadVal7;
-    document.getElementById("tdW3D2").innerHTML = deadVal8;
-    document.getElementById("tdW3D3").innerHTML = deadVal9;
-    document.getElementById("tdW4D1").innerHTML = deadVal10;
-    document.getElementById("tdW4D2").innerHTML = deadVal11;
-    document.getElementById("tdW4D3").innerHTML = deadVal12;
+    document.getElementById("tdW1D1").innerHTML = Math.round(deadVal1);
+    document.getElementById("tdW1D2").innerHTML = Math.round(deadVal2);
+    document.getElementById("tdW1D3").innerHTML = Math.round(deadVal3);
+    document.getElementById("tdW2D1").innerHTML = Math.round(deadVal4);
+    document.getElementById("tdW2D2").innerHTML = Math.round(deadVal5);
+    document.getElementById("tdW2D3").innerHTML = Math.round(deadVal6);
+    document.getElementById("tdW3D1").innerHTML = Math.round(deadVal7);
+    document.getElementById("tdW3D2").innerHTML = Math.round(deadVal8);
+    document.getElementById("tdW3D3").innerHTML = Math.round(deadVal9);
+    document.getElementById("tdW4D1").innerHTML = Math.round(deadVal10);
+    document.getElementById("tdW4D2").innerHTML = Math.round(deadVal11);
+    document.getElementById("tdW4D3").innerHTML = Math.round(deadVal12);
 
     return deadMax;
 
@@ -134,18 +134,18 @@ function setBench() {
     var benchVal11 = values[1] * benchMax;
     var benchVal12 = values[2] * benchMax;
 
-    document.getElementById("tdW1B1").innerHTML = benchVal1;
-    document.getElementById("tdW1B2").innerHTML = benchVal2;
-    document.getElementById("tdW1B3").innerHTML = benchVal3;
-    document.getElementById("tdW2B1").innerHTML = benchVal4;
-    document.getElementById("tdW2B2").innerHTML = benchVal5;
-    document.getElementById("tdW2B3").innerHTML = benchVal6;
-    document.getElementById("tdW3B1").innerHTML = benchVal7;
-    document.getElementById("tdW3B2").innerHTML = benchVal8;
-    document.getElementById("tdW3B3").innerHTML = benchVal9;
-    document.getElementById("tdW4B1").innerHTML = benchVal10;
-    document.getElementById("tdW4B2").innerHTML = benchVal11;
-    document.getElementById("tdW4B3").innerHTML = benchVal12;
+    document.getElementById("tdW1B1").innerHTML = Math.round(benchVal1);
+    document.getElementById("tdW1B2").innerHTML = Math.round(benchVal2);
+    document.getElementById("tdW1B3").innerHTML = Math.round(benchVal3);
+    document.getElementById("tdW2B1").innerHTML = Math.round(benchVal4);
+    document.getElementById("tdW2B2").innerHTML = Math.round(benchVal5);
+    document.getElementById("tdW2B3").innerHTML = Math.round(benchVal6);
+    document.getElementById("tdW3B1").innerHTML = Math.round(benchVal7);
+    document.getElementById("tdW3B2").innerHTML = Math.round(benchVal8);
+    document.getElementById("tdW3B3").innerHTML = Math.round(benchVal9);
+    document.getElementById("tdW4B1").innerHTML = Math.round(benchVal10);
+    document.getElementById("tdW4B2").innerHTML = Math.round(benchVal11);
+    document.getElementById("tdW4B3").innerHTML = Math.round(benchVal12);
 
     return benchMax;
 
@@ -182,18 +182,18 @@ function calcOHP() {
     var ohpVal11 = values[1] * ohpMax;
     var ohpVal12 = values[2] * ohpMax;
 
-    document.getElementById("tdW1O1").innerHTML = ohpVal1;
-    document.getElementById("tdW1O2").innerHTML = ohpVal2;
-    document.getElementById("tdW1O3").innerHTML = ohpVal3;
-    document.getElementById("tdW2O1").innerHTML = ohpVal4;
-    document.getElementById("tdW2O2").innerHTML = ohpVal5;
-    document.getElementById("tdW2O3").innerHTML = ohpVal6;
-    document.getElementById("tdW3O1").innerHTML = ohpVal7;
-    document.getElementById("tdW3O2").innerHTML = ohpVal8;
-    document.getElementById("tdW3O3").innerHTML = ohpVal9;
-    document.getElementById("tdW4O1").innerHTML = ohpVal10;
-    document.getElementById("tdW4O2").innerHTML = ohpVal11;
-    document.getElementById("tdW4O3").innerHTML = ohpVal12;
+    document.getElementById("tdW1O1").innerHTML = Math.round(ohpVal1);
+    document.getElementById("tdW1O2").innerHTML = Math.round(ohpVal2);
+    document.getElementById("tdW1O3").innerHTML = Math.round(ohpVal3);
+    document.getElementById("tdW2O1").innerHTML = Math.round(ohpVal4);
+    document.getElementById("tdW2O2").innerHTML = Math.round(ohpVal5);
+    document.getElementById("tdW2O3").innerHTML = Math.round(ohpVal6);
+    document.getElementById("tdW3O1").innerHTML = Math.round(ohpVal7);
+    document.getElementById("tdW3O2").innerHTML = Math.round(ohpVal8);
+    document.getElementById("tdW3O3").innerHTML = Math.round(ohpVal9);
+    document.getElementById("tdW4O1").innerHTML = Math.round(ohpVal10);
+    document.getElementById("tdW4O2").innerHTML = Math.round(ohpVal11);
+    document.getElementById("tdW4O3").innerHTML = Math.round(ohpVal12);
 
     return ohpMax;
 
