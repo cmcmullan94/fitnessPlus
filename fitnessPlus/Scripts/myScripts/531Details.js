@@ -49,7 +49,7 @@ function setSquat() {
     document.getElementById("tdW4S2").innerHTML = Math.round(squatVal11);
     document.getElementById("tdW4S3").innerHTML = Math.round(squatVal12);
 
-   
+
     //inputting bench values 
 
     //inputting OHP values
@@ -237,22 +237,13 @@ function save() {
 function createPDF() {
     var sTable = document.getElementById('531Table').innerHTML;
 
-
-
     // CREATE A WINDOW OBJECT.
     var win = window.open('', '', 'height=700,width=700');
 
-    var style = "<style>";
-    style = style + "531Table, th, td {text-align: center; vertical-align: middle;}";
-    style = style + "auto-style1 {height: 37px;}";
-    style = style + "auto-style2 {color: #fff; background-color: #337ab7; height: 37px;}";
-    style = style + "auto-stle3 {background-color: #dff0d8; height: 37px;}";
-
-    style = style + "</style>";
 
     win.document.write('<html><head>');
     win.document.write('<title>my531 Plan!</title>');   // <title> FOR PDF HEADER.
-    win.document.write(style);
+   // win.document.write(style);
     win.document.write('</head>');
     win.document.write('<body>');
     win.document.write(sTable);         // THE TABLE CONTENTS INSIDE THE BODY TAG.
@@ -262,7 +253,7 @@ function createPDF() {
 
     win.print();    // PRINT THE CONTENTS.
 }
-    
+
 
 
 
