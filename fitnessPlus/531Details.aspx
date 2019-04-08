@@ -47,22 +47,8 @@
 
 
     <script>
-        $(document).ready(function () {
-            $('#531Table').DataTable({
 
-                
-                "paging": false,
-                "ordering": false,
-                "info": false,
-                "bFilter": false,
-                dom: 'Bfrtip',
-                buttons: [
-                    'pdf',
-                    'excel',
-                ]
-            });
-        });
-    </script> 
+</script>
 
     <!--HTML-->
 
@@ -135,6 +121,10 @@
             </div>
         </div>
         <!-- Row 3 -->
+
+        <input type="button" id="btnExport" value="Create PDF!" class="btn btn-info" style="background-color: #66CCFF" onclick="createPDF()" />
+
+
 
     </div>
     <!-- Container close -->

@@ -199,7 +199,6 @@
     <Content Include="Scripts\myScripts\myPlan.js" />
     <Content Include="Scripts\myScripts\Register.js" />
     <Content Include="Scripts\myScripts\strengthTwo.js" />
-    <Content Include="Scripts\myScripts\test.js" />
     <Content Include="Scripts\popper-utils.js" />
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
