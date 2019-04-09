@@ -249,16 +249,14 @@ function genPDF() {
 }
 
 function sendSMS() {
-    var clockwork = require('clockwork')({ key: 'ff65b8bde947d8a55d8a2d45e494db37803521a5' });
-
-    clockwork.sendSms({ To: '07842821505', Content: 'Test!' },
-        function (error, resp) {
-            if (error) {
-                console.log('Something went wrong', error);
-            } else {
-                console.log('Message sent', resp.responses[0].id);
-            }
-        });
+    clockwork.sendSms([{ To: '07842821505', Content: 'Test!' },
+    { To: '447123456781', Content: 'Another one' }], function (error, resp) {
+        if (error) {
+            console.log('Something went wrong', error);
+        } else {
+            console.log('Messages sent');
+        }
+    });
 }
 
 
