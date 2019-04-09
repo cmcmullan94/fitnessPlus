@@ -36,6 +36,8 @@
     <!-- jsPDF import -->
     <script src="Scripts/myScripts/jspdf.min.js"></script>
 
+    <!-- Node.js require function import -->
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
 
     <!--HTML-->
 
@@ -108,9 +110,7 @@
                 </label>
                 <br />
                 <label for="btnRemindMe" style="color: #66ccff">
-                   <!-- <input type="button" id="btnRemindMe" value="Remind me" class="btn btn-info" style="background-color: #66CCFF" /> -->
-                    <asp:Button ID="btnRemindMe" runat="server" Text="Remind me!" style="background-color: #66CCFF" class="btn btn-info" OnClick="btnRemindMe_Click"/>
-                    
+                    <input type="button" id="btnRemindMe" value="Remind me" class="btn btn-info" style="background-color: #66CCFF" onclick="sendSMS()"/> 
                     <br />
                     <small id="remindMe" class="form-text text-muted">Get a reminder now!</small>
                 </label>
