@@ -11,7 +11,7 @@ function registerAccount() {
 
     if (user) {
         // User is signed in.
-        
+
         var data = {                             //data being added
             Username: userName,
         }

@@ -234,27 +234,23 @@ function save() {
 
 }
 
-function createPDF() {
-    var sTable = document.getElementById('531Table').innerHTML;
-
-    // CREATE A WINDOW OBJECT.
-    var win = window.open('', '', 'height=700,width=700');
 
 
-    win.document.write('<html><head>');
-    win.document.write('<title>my531 Plan!</title>');   // <title> FOR PDF HEADER.
-   // win.document.write(style);
-    win.document.write('</head>');
-    win.document.write('<body>');
-    win.document.write(sTable);         // THE TABLE CONTENTS INSIDE THE BODY TAG.
-    win.document.write('</body></html>');
+function setTimer() {
 
-    win.document.close(); 	// CLOSE THE CURRENT WINDOW.
-
-    win.print();    // PRINT THE CONTENTS.
 }
 
 
+function genPDF() {
+
+    var divToPrint = document.getElementById("531Table");
+    newWin = window.open("");
+    newWin.document.write(divToPrint.outerHTML);
+    newWin.print();
+    newWin.close();
+
+
+}
 
 
 

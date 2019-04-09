@@ -33,10 +33,13 @@
     <script src="Scripts/myScripts/firebase.js"></script>
     <script src="Scripts/myScripts/531Details.js"></script>
 
+    <!-- jsPDF import -->
+    <script src="Scripts/myScripts/jspdf.min.js"></script>
+
 
     <!--HTML-->
 
-    <div class="container text-center">
+    <div class="container text-center"> 
 
         <div class="row" style="padding-bottom: 35px">
             <!-- Row 1 -->
@@ -100,19 +103,27 @@
                 <label for="btnSave" style="color: #66ccff">
                     <input type="button" id="btnSave" value="Save!" class="btn btn-info" style="background-color: #66CCFF" onclick="save()" />
                     <br />
-                    <small id="saveHelp" class="form-text text-muted">Happy with these numbers? Save them here!</small>
+                    <small id="saveHelp" class="form-text text-muted">Happy with these numbers? <br /> Start your 531 program now!</small>
+                    <br />
+                </label>
+                <br />
+                <label for="btnRemindMe" style="color: #66ccff">
+                   <!-- <input type="button" id="btnRemindMe" value="Remind me" class="btn btn-info" style="background-color: #66CCFF" /> -->
+                    <asp:Button ID="btnRemindMe" runat="server" Text="Remind me!" style="background-color: #66CCFF" class="btn btn-info" OnClick="btnRemindMe_Click"/>
+                    
+                    <br />
+                    <small id="remindMe" class="form-text text-muted">Get a reminder now!</small>
                 </label>
             </div>
         </div>
         <!-- Row 3 -->
 
-        <input type="button" id="btnExport" value="Create PDF!" class="btn btn-info" style="background-color: #66CCFF" onclick="createPDF()" />
+        <input type="button" id="btnExport" value="Create PDF!" class="btn btn-info" style="background-color: #66CCFF" onclick="genPDF()" />
 
 
 
     </div>
     <!-- Container close -->
-
     <table class="table table-hover" id="531Table">
         <thead>
             <tr>
@@ -130,7 +141,7 @@
                 <th scope="col"></th>
                 <th scope="col"></th>
                 <th scope="col"></th>
-                <th scope="col">Row</th>
+                <th scope="col">OHP</th>
                 <th scope="col"></th>
             </tr>
             <tr>
@@ -432,8 +443,7 @@
             </tr>
         </tbody>
     </table>
-
-
+    
 
 
 

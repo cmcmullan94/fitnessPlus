@@ -20,7 +20,7 @@
                         <!-- Maintenance cals from db -->
                         <br />
                         Protein:
-                        <br />           
+                        <br />
                         Fat:
                         <br />
                         Carbs:
@@ -59,18 +59,21 @@
 
         <div class="row">
             <div class="col-sm-4"></div>
+            <input type="button" id="btnCountdown" value="Start timer" class="btn btn-info" style="background-color: #66CCFF" onclick="#" />
+
             <div class="col-sm-4">
-                <!-- Pull info from db here  -->
+                <!-- Countdown timer  -->
+
             </div>
             <div class="col-sm-4"></div>
-            
+
         </div>
 
     </div>
 
 
 
-    
+
     <!--<button onclick="logOut()">Log Out</button> -->
 
 

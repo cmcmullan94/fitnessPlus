@@ -1,6 +1,4 @@
-﻿//var mainApp = {};
-
-//(function ()){
+﻿
 var firebase = app_firebase;
 var uid = null;
 firebase.auth().onAuthStateChanged(function (user) {
@@ -59,7 +57,3 @@ function errData(err) {
     console.log(err);
 
 }
-
-
-    //mainApp.logOut = logOut;
-//})()
