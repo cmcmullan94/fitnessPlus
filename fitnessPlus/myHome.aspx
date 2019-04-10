@@ -4,8 +4,10 @@
 
     <!-- Styles -->
     <style>
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
         #map {
-            height: 100%;
+            height: 700px;
         }
     </style>
 
@@ -15,7 +17,7 @@
 
 
     <!-- Places API scripts -->
-
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmBq38iYv1efT4zSSD6ekgP9tO0920AaA&libraries=places"></script>
 
 
 
@@ -70,13 +72,21 @@
 
         <!-- Row 2 - Google Places API here -->
 
-        <div class="row">
+        <div class="row" style="padding-bottom: 25px;">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
             </div>
             <div class="col-sm-4"></div>
 
         </div>
+        <label for="btn" style="color: #afabab; font-size: x-large;">
+            Your local gyms!
+        </label>
+        <div id="map"></div>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdKuNXNw_UgAqyxmdWFWslOIEL5pkv55E&callback=initMap">
+        </script>
+
 
     </div>
     <!-- Container close -->
