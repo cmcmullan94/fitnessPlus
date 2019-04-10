@@ -40,16 +40,12 @@ function gotData(data) {
     var keys = Object.keys(users);
     console.log(keys);
 
-
     for (var i = 0; i < keys.length; i++) {
         var k = keys[i];
         var initials = users[k].initials;
         var user = users[k].user;
         console.log(initials, user);
     } 
-
-
-
 }
 
 function errData(err) {
@@ -57,3 +53,5 @@ function errData(err) {
     console.log(err);
 
 }
+
+

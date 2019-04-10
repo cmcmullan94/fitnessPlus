@@ -2,10 +2,23 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
+    <!-- Styles -->
+    <style>
+        #map {
+            height: 100%;
+        }
+    </style>
 
     <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
     <script src="Scripts/myScripts/firebase.js"></script>
     <script src="Scripts/myScripts/myHome.js"></script>
+
+
+    <!-- Places API scripts -->
+
+
+
+
 
     <div class="container text-center">
         <!-- Row 1 -->
@@ -55,23 +68,18 @@
             </div>
         </div>
 
-        <!-- Row 2 -->
+        <!-- Row 2 - Google Places API here -->
 
         <div class="row">
             <div class="col-sm-4"></div>
-            <input type="button" id="btnCountdown" value="Start timer" class="btn btn-info" style="background-color: #66CCFF" onclick="#" />
-
             <div class="col-sm-4">
-                <!-- Countdown timer  -->
-
             </div>
             <div class="col-sm-4"></div>
 
         </div>
 
     </div>
-
-
+    <!-- Container close -->
 
 
     <!--<button onclick="logOut()">Log Out</button> -->
