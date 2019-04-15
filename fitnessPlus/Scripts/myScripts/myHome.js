@@ -16,6 +16,7 @@ function logOut() {
     console.log("Log Out");
 }
 
+
 function test() {
 
     var user = firebase.auth().currentUser;

@@ -21,8 +21,8 @@
     <!-- Firebase App is always required and must be first -->
     <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
 
+    <script src="Scripts/myScripts/firebase.js"></script>
     <script src="Scripts/myScripts/masterLogOut.js"></script>
-
 
     <!-- Add additional services that you want to use -->
     <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-auth.js"></script>
@@ -71,20 +71,19 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <!-- <a href="#"><img src="Images/logo.png" /></a> -->
-                    <a class="navbar-brand" href="#">fitnessPlus</a>
+                    <a><img src="Images/logo.png" /></a> 
+                    <!--<a class="navbar-brand" href="#">fitnessPlus</a> -->
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="MacroCalculator.aspx" style="font-family: Calibri; font-size: larger; color: #000000">myMacros</a></li>
                         <li><a href="myHome.aspx" style="font-family: Calibri; font-size: larger; color: #000000">myHome</a></li>
-                        <li><a href="#" style="font-family: Calibri; font-size: larger; color: #000000">myProfile</a></li>
-                        <li><a href="myPlan.aspx" style="font-family: Calibri; font-size: larger; color: #000000">myPlan</a></li>
-                        <li><a href="#" style="font-family: Calibri; font-size: larger; color: #000000">myTargets</a></li>
-                        <li><a href="#" style="font-family: Calibri; font-size: larger; color: #000000"></a>myCheck-In</li>
+                        <li><a href="MacroCalculator.aspx" style="font-family: Calibri; font-size: larger; color: #000000">myMacros</a></li>
+                        <li><a href="myPlan.aspx" style="font-family: Calibri; font-size: larger; color: #000000">myPlan</a></li>         
+                        <li><a href="#" style="font-family: Calibri; font-size: larger; color: #000000">myCheck-In</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                       <!--  <li><a href="Register.aspx"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>       --> 
+                       <!--  <li><a href="Register.aspx"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li> --> 
+                        <li><label id="txtUsername" style="visibility: hidden"></label>#</li>
                         <li><a onclick="logOut()"><span class="glyphicon glyphicon-log-in"></span>LogOut</a></li> 
                     </ul>
                 </div>
