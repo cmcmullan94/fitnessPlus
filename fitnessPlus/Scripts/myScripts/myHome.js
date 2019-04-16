@@ -11,24 +11,13 @@ firebase.auth().onAuthStateChanged(function (user) {
     }
 });
 
+
 function logOut() {
     firebase.auth().signOut();
     console.log("Log Out");
 }
 
 
-function test() {
-
-    var user = firebase.auth().currentUser;
-
-    if (user) {
-        // User is signed in.
-        console.log(uid);
-    } else {
-        // No user is signed in.
-        console.log("Cannot get UID");
-    }
-}
 
 var firebaseRef = app_firebase.database();             //database reference
 var ref = firebaseRef.ref('User');

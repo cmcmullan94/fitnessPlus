@@ -15,7 +15,25 @@
     <script src="Scripts/myScripts/firebase.js"></script>
     <script src="Scripts/myScripts/myHome.js"></script>
 
-    <script src="Scripts/myScripts/getUserName.js"></script>
+    <!-- Pulling user data from unique ID -->
+    <script>
+        $(document).ready(function () {
+            var rootRef = app_firebase.database().ref().child("User");
+            var user = firebase.auth().currentUser;
+            uid = user.uid;
+
+            console.log("Var uid " + user);
+
+            rootRef.on("child_added", snap => {
+                var name = snap.child(user).child("Username").val();
+
+                $("#txtUsername").text(name);
+                console.log(name);
+            });
+        });
+    </script>
+
+
 
 
     <!-- Places API scripts -->
@@ -32,15 +50,15 @@
                     <label>My Macros</label>
                     <br />
                     <label for="btnUpdateMacros" style="color: #afabab">
-                        Maintenance
+                        Maintenance: <label id="txtMain"></label>
                         <br />
                         <!-- Maintenance cals from db -->
                         <br />
-                        Protein:
+                        Protein: <label id="txtProtein"></label>
                         <br />
-                        Fat:
+                        Fat: <label id="txtFat"></label>
                         <br />
-                        Carbs:
+                        Carbs: <label id="txtCarbs"></label>
                         <br />
                         <br />
                         <input type="button" id="btnUpdateMacros" value="View" class="btn btn-info" style="background-color: #66CCFF" />
@@ -49,24 +67,33 @@
             </div>
             <div class="col-sm-4">
                 <div style="border-style: solid; border-width: medium; border-color: inherit; color: #66ccff">
-                    <label>Days to next check in...</label>
+                    <label>My Plan</label>
                     <br />
-                    <label for="btnCheckIn" style="color: #afabab">
-                        <!--Pull information from myCheckIn.aspx
-                            count down timer from check in -->
-                        Check in count down timer here
-
-                        <input type="button" id="btnCheckIn" value="View" class="btn btn-info" style="background-color: #66CCFF" onclick="test()" />
+                    <label for="btnMyPlan" style="color: #afabab">
+                        Plan ID: <label id="txtPlanID"></label>
+                        <br />
+                        <br />
+                        My Numbers!
+                        <br />
+                        <br />
+                        Squat: <label id="txtSquat" style="padding-right: 5px"></label>     
+                        Deadlift: <label id="txtDeadlift"></label>
+                        <br />
+                        Bench: <label id="txtBench" style="padding-right: 5px;"></label>
+                        OHP: <label id="txtOHP"></label>
+                        <br />
                     </label>
                 </div>
 
             </div>
             <div class="col-sm-4">
                 <div style="border-style: solid; border-width: medium; border-color: inherit; color: #66ccff">
-                    <label>Rewards Earned</label>
+                    <label>My Profile</label>
+                    <br />                   
+                    <label  style="color: #afabab">
+                    User!
                     <br />
-                    <label for="btn" style="color: #afabab">
-                        Rewards earned through your current plan
+                    <label id="txtUsername"> </label>
                     </label>
                 </div>
             </div>
