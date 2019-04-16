@@ -206,6 +206,7 @@
     <Content Include="Scripts\firebase.js" />
     <Content Include="Scripts\myScripts\531CheckIn.js" />
     <Content Include="Scripts\myScripts\531Details.js" />
+    <Content Include="Scripts\myScripts\getUserName.js" />
     <Content Include="Scripts\myScripts\html2canvas.js" />
     <Content Include="Scripts\myScripts\jspdf.min.js" />
     <Content Include="Scripts\myScripts\jspdf.plugin.autotable.min.js" />

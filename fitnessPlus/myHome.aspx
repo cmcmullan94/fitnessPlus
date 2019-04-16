@@ -15,6 +15,8 @@
     <script src="Scripts/myScripts/firebase.js"></script>
     <script src="Scripts/myScripts/myHome.js"></script>
 
+    <script src="Scripts/myScripts/getUserName.js"></script>
+
 
     <!-- Places API scripts -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmBq38iYv1efT4zSSD6ekgP9tO0920AaA&libraries=places"></script>

@@ -51,8 +51,8 @@
             <div class="container-fluid">
                 <div class="navbar-header">
 
-                    <!-- <a href="#"><img src="Images/logo.png" /></a> -->
-                    <a class="navbar-brand" href="#">fitnessPlus</a>
+                    <a><img src="Images/logo.png" /></a> 
+                    <!--<a class="navbar-brand" href="#">fitnessPlus</a>-->
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
