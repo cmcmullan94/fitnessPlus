@@ -248,16 +248,6 @@ function genPDF() {
 
 }
 
-function sendSMS() {
-    clockwork.sendSms([{ To: '07842821505', Content: 'Test!' },
-    { To: '447123456781', Content: 'Another one' }], function (error, resp) {
-        if (error) {
-            console.log('Something went wrong', error);
-        } else {
-            console.log('Messages sent');
-        }
-    });
-}
 
 
 

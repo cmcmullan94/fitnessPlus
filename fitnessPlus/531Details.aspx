@@ -109,11 +109,6 @@
                     <br />
                 </label>
                 <br />
-                <label for="btnRemindMe" style="color: #66ccff">
-                    <input type="button" id="btnRemindMe" value="Remind me" class="btn btn-info" style="background-color: #66CCFF" onclick="sendSMS()"/> 
-                    <br />
-                    <small id="remindMe" class="form-text text-muted">Get a reminder now!</small>
-                </label>
             </div>
         </div>
         <!-- Row 3 -->
