@@ -79,7 +79,7 @@
                         <li><a href="myHome.aspx" style="font-family: Calibri; font-size: larger; color: #000000">myHome</a></li>
                         <li><a href="MacroCalculator.aspx" style="font-family: Calibri; font-size: larger; color: #000000">myMacros</a></li>
                         <li><a href="myPlan.aspx" style="font-family: Calibri; font-size: larger; color: #000000">myPlan</a></li>         
-                        <li><a href="#" style="font-family: Calibri; font-size: larger; color: #000000">myCheck-In</a></li>
+                        <li><a href="myCheckIn.aspx" style="font-family: Calibri; font-size: larger; color: #000000">myCheck-In</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a onclick="logOut()"><span class="glyphicon glyphicon-log-in"></span>LogOut</a></li> 
