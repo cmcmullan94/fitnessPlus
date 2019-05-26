@@ -15,24 +15,6 @@
     <script src="Scripts/myScripts/firebase.js"></script>
     <script src="Scripts/myScripts/myHome.js"></script>
 
-    <!-- Pulling user data from unique ID -->
-    <script>
-        $(document).ready(function () {
-            var rootRef = app_firebase.database().ref().child("User");
-            var user = firebase.auth().currentUser;
-            uid = user.uid;
-
-            console.log("Var uid " + user);
-
-            rootRef.on("child_added", snap => {
-                var name = snap.child(user).child("Username").val();
-
-                $("#txtUsername").text(name);
-                console.log(name);
-            });
-        });
-    </script>
-
 
     <!-- Places API scripts -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmBq38iYv1efT4zSSD6ekgP9tO0920AaA&libraries=places"></script>

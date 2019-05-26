@@ -27,7 +27,3 @@ function registerAccount() {
 
 
 }
-
-function test() {
-    console.log("Test");
-}

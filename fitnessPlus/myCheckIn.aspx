@@ -5,7 +5,7 @@
     <style>
         .star {
             color: goldenrod;
-            font-size: 2.0rem;
+            font-size: 4.0rem;
             padding: 0 1rem; /* space out the stars */
         }
 
@@ -34,7 +34,34 @@
 
 
     <div class="container text-center">
-        <label style="color: #66ccff">myCheck-In</label>
+        <label style="color: #66ccff; padding-bottom: 15px; font-size: xx-large">myCheck-In</label>
+        
+        <!-- Row 1 -->
+        <div class="row">
+            <div class="col" style="padding-bottom: 10px">
+                <label style="color: #66ccff">
+                    Weekly weight update! (lbs)
+                <input type="text" class="form-control" placeholder="100" id="txtWeightInput" style="padding-top:10px;"/>
+                </label>
+            </div>
+
+
+            <div class="col" style="padding-bottom: 10px">
+                <label style="color: #66ccff">
+                    Weekly measurements update! <br />
+                    <label style="color: #afabab">Waist(in)
+                        <input type="text" class="form-control" placeholder="100" id="txtWaist" />
+                    </label>
+                    <label style="color: #afabab">Hips(in)
+                        <input type="text" class="form-control" placeholder="100" id="txtHips" />
+                    </label>
+                    <label style="color: #afabab">Neck(in)
+                        <input type="text" class="form-control" placeholder="100" id="txtNeck" />
+                    </label>
+                </label>
+            </div>
+        </div>
+
         <div class="row">
 
             <div class="col-sm-4">
@@ -51,10 +78,10 @@
                 </div>
                 <br />
                 <br />
-                <p style="color:#afabab; font-family: Calibri; font-size: larger;">Please rate yourself out of 5 for your work effort across the last week!</p>
+                <p style="color: #afabab; font-family: Calibri; font-size: larger;">Please rate yourself out of 5 for your work effort across the last week!</p>
                 <br />
                 <label for="btnSaveCheckIn" style="color: #afabab">
-                    <input type="button" id="btnSaveCheckIn" value="Submit!" class="btn btn-info" style="background-color: #66CCFF" />
+                    <input type="button" id="btnSaveCheckIn" value="Submit!" class="btn btn-info" style="background-color: #66CCFF" onclick="save()"/>
                 </label>
             </div>
             <div class="col-sm-4">

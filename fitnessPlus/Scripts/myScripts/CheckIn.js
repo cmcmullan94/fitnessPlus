@@ -31,3 +31,32 @@ function setRating() {
         }
     });
 }
+
+
+function save() {
+    var firebase = app_firebase;
+    var user = firebase.auth().currentUser;
+
+    uid = user.uid;
+
+    var firebaseRef = app_firebase.database();                              //database reference
+
+    var ref = firebaseRef.ref('User').child(uid).child('Check-In');           //referencing node
+
+    var txtWeight = document.getElementById("txtWeightInput").value;
+    var txtWaist = document.getElementById("txtWaist").value;
+    var txtHips = document.getElementById("txtHips").value;
+    var txtNeck = document.getElementById("txtNeck").value;
+
+
+
+    var data = {                                                            //data being added
+        weight: txtWeight,
+        waist: txtWaist,
+        hips: txtHips,
+        neck: txtNeck,
+
+    }
+
+    ref.set(data);
+}

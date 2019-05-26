@@ -1,5 +1,4 @@
-﻿
-var firebase = app_firebase;
+﻿var firebase = app_firebase;
 var uid = null;
 firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
@@ -10,13 +9,6 @@ firebase.auth().onAuthStateChanged(function (user) {
         window.location.replace("login.aspx");
     }
 });
-
-
-function logOut() {
-    firebase.auth().signOut();
-    console.log("Log Out");
-}
-
 
 
 var firebaseRef = app_firebase.database();             //database reference
@@ -135,3 +127,6 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         'Error: Your browser doesn\'t support geolocation.');
     infoWindow.open(map);
 }
+
+
+
